@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Лингвистический отчет кластерного анализа «Big Data»</title>
+        <link href="res/css/bootstrap.min.css" rel="stylesheet">
+        <link href="res/style.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="page-header">
+            <h1>Лингвистический отчет кластерного анализа «Big Data»</h1>
+        </div>
+
+        <h3>Общая характеристика кластеров</h3>
+        <div style="padding-left: 25px;">
+            <p>Общее количество исследуемых объектов: <span class="label label-success">{{ objects_count }}</span>.</p>
+            <p>Объекты были сгруппированы в <span class="label label-success">{{ clusters_count }}</span> кластеров.</p>
+            <p>Список кластеров: <span class="label label-success">«Имя кластера 1»</span> <span class="label label-success">«Имя кластера К»</span>.</p>
+            <p>Количество объектов можно изменять, количество кластеров изменять («можно» или «нельзя»).</p>
+
+            <p><strong>Большинство</strong> «объектов исследования» сгруппированы в кластере <span class="label label-success">{{ most_popular_cluster }}</span>.</p> 
+            <p><strong>Наименьшее количество</strong> «объектов исследования» сгруппированы в кластере <span class="label label-success">{{ least_popular_cluster }}</span>.</p>
+            <p>Или «объекты исследования» сгруппированы в кластеры <strong>равномерно</strong>. (нужно предварительно определить лингвистические оценки «Большинство», «Меньшинство», «Равномерно»).</p>
+        </div>
+
+        <br />
+        <h3>Характеристика каждого кластера</h3>
+
+        <p><span class="label label-default">{{ cluster_id }}</span> <span class="label label-info">{{ cluster_name }}</span></p>
+
+        <div style="padding-left: 25px;">
+            <p>Содержит <span class="label label-success">{{ cluster_percentage }}</span> процентов исследуемых объектов.</p>
+
+            <p><strong><span class="glyphicon glyphicon-th-large"></span> Характеристика признаков по которым проводилась кластеризация в кластере:</strong></p>
+            <div style="padding-left: 25px;">
+                <p><span class="label label-primary">{{ attribute_name }}</span></p>
+                <p><u>Среднее значение</u>: <span class="label label-success">{{ mid_value }}</span></p>
+                <p><u>Минимальное значение</u>: <span class="label label-success">{{ min_value }}</span></p>
+                <p><u>Максимальное значение</u>: <span class="label label-success">{{ max_value }}</span></p>
+
+                <p><span class="label label-primary">{{ attribute_name }}</span></p>
+                <p><u>Среднее значение</u>: <span class="label label-success">{{ mid_value }}</span></p>
+                <p><u>Минимальное значение</u>: <span class="label label-success">{{ min_value }}</span></p>
+                <p><u>Максимальное значение</u>: <span class="label label-success">{{ max_value }}</span></p>
+            </div>
+
+            <p><strong><span class="glyphicon glyphicon-time"></span> Темпоральная характеристика по типам тенденции</strong>:</p>
+            <div style="padding-left: 25px;">
+                <i>(типы тенденции:рост,падение,стабильность)</i>
+                <p>Типичная тенденция <span class="label label-success">тип тенденции</span> соответствует <span class="label label-success">наименование признака 1</span> и составляет <span class="label label-success">столько</span> процентов.</p>
+                <p>Нетипичная тенденция <span class="label label-success">тип тенденции</span> соответствует <span class="label label-success">наименование признака К</span> и составляет <span class="label label-success">столько</span> процентов. Или тенденции в признаках распределены равномерно: Рост = «столько» процентов, Падение = «столько» процентов, Стабильность = «столько» процентов.</p>
+            </div>
+
+            <p><strong><span class="glyphicon glyphicon-map-marker"></span> Пространственное распределение в кластере:</strong></p>
+            <div style="padding-left: 25px;">
+                <p>Большинство <span class="label label-success">объектов исследования</span> относятся к <span class="label label-success">наименование географического места</span> (или другого пространства ), что составляет <span class="label label-success">столько-то процентов</span>.</p>
+                <p>Наименьшее количество <span class="label label-success">объектов исследования</span> относятся к <span class="label label-success">наименование географического места</span> (или другого пространства), что составляет <span class="label label-success">столько-то процентов</span>. Или <span class="label label-success">объекты исследования</span> равномерно распределены в пространстве <span class="label label-success">наименование пространства</span>).</p>
+            </div>
+        </div>
+
+        <script src="res/js/jquery.min.js"></script>
+        <script src="res/js/bootstrap.min.js"></script>
+
+    </body>
+</html>
