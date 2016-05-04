@@ -63,5 +63,4 @@ target/
 
 #Custom
 result.html
-*.iml
 .idea/
