@@ -11,6 +11,7 @@ def main():
         print("Enter CSV filename as argument!")
         sys.exit(2)
     analyse.entry_point(filename)
+    print("Success!")
 
 
 if __name__ == "__main__":

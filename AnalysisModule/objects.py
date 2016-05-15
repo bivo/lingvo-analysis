@@ -1,6 +1,8 @@
 
 class Report(object):
+    html_table = ""
     objects_count = ""
+    objects_list = []
     clusters_count = ""
     cluster_names = []
     most_popular_cluster = ""

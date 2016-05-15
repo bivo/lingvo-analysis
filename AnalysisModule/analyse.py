@@ -1,5 +1,6 @@
 from jinja2 import FileSystemLoader, Environment
 from pandas import read_csv
+from collections import Counter
 
 from AnalysisModule.objects import Report, Cluster
 
@@ -14,22 +15,33 @@ def entry_point(filename):
 
 
 def start_analysis():
-    report = Report()
+    all_clusters = data_frame.loc["Кластер"]
+    all_clusters_list = all_clusters.values.tolist()
+    unique_clusters = set(all_clusters)
+    cluster_statistics = Counter(all_clusters)
 
+    report = Report()
+    report.html_table = data_frame.to_html(classes=["table", "table-striped", "table-bordered", "table-hover", "table-condensed"])
     report.objects_count = len(data_frame.columns)
-    unique_clusters = set(data_frame.loc["Кластер"])
+    report.objects_list = data_frame.columns
     report.clusters_count = len(unique_clusters)
     report.cluster_names = unique_clusters
-    report.most_popular_cluster = "NaN"
-    report.least_popular_cluster = "NaN"
+    report.most_popular_cluster = cluster_statistics.most_common(1)[0][0]
+    report.least_popular_cluster = cluster_statistics.most_common()[:-1-1:-1][0][0]
 
     report.all_clusters = []
-    for cluster in unique_clusters:
-        cluster_obj = Cluster()
-        cluster_obj.cluster_id = str(cluster)
-        cluster_obj.cluster_name = "Кластер " + str(cluster)
-        cluster_obj.cluster_percentage = "NaN"
-        report.all_clusters.append(cluster_obj)
+    for clusterId in unique_clusters:
+        # print("Cluster " + str(clusterId))
+
+        cluster_freq = all_clusters_list.count(clusterId)
+        percentage = (cluster_freq / 100) * len(all_clusters_list)
+
+        cluster = Cluster()
+        cluster.cluster_id = str(clusterId)
+        cluster.cluster_name = "Кластер " + str(clusterId)
+        cluster.cluster_percentage = percentage
+
+        report.all_clusters.append(cluster)
 
     return report
 
@@ -37,8 +49,8 @@ def start_analysis():
 def read_file(filename):
     global data_frame
     data_frame = read_csv(filename, sep=',', index_col=0)
-    print("Результат:")
-    print(data_frame)
+    # print("Результат:")
+    # print(data_frame)
 
 
 def render_result(**kwargs):
