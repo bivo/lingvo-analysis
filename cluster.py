@@ -1,8 +1,6 @@
 import sys
 import getopt
-from AnalysisModule import analyse
 from ClusteringModule import time_series
-
 
 def main():
     try:
@@ -11,11 +9,8 @@ def main():
     except (getopt.error, IndexError):
         print("Enter CSV filename as argument!")
         sys.exit(2)
-
-    clusters = time_series.entry_point('data/time_series.csv')
-    analyse.entry_point(filename, clusters)
+    time_series.entry_point(filename)
     print("Success!")
-
 
 if __name__ == "__main__":
     main()

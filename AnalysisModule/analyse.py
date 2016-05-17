@@ -1,3 +1,4 @@
+import numpy as np
 from jinja2 import FileSystemLoader, Environment
 from pandas import read_csv
 from collections import Counter
@@ -6,19 +7,19 @@ from AnalysisModule.objects import Report, Cluster
 
 # Some global vars
 data_frame = None
+time_series_clusters = None
 
 
-def entry_point(filename):
+def entry_point(filename, clusters):
     read_file(filename)
-    result = start_analysis()
+    result = start_analysis(clusters)
     render_result(**result.__dict__)
 
 
-def start_analysis():
-    all_clusters = data_frame.loc["Кластер"]
-    all_clusters_list = all_clusters.values.tolist()
-    unique_clusters = set(all_clusters)
-    cluster_statistics = Counter(all_clusters)
+def start_analysis(clusters):
+    all_clusters_list = clusters.values.flatten().tolist()
+    unique_clusters = set(all_clusters_list)
+    cluster_statistics = Counter(all_clusters_list)
 
     report = Report()
     report.html_table = data_frame.to_html(classes=["table", "table-striped", "table-bordered", "table-hover", "table-condensed"])
@@ -34,7 +35,7 @@ def start_analysis():
         # print("Cluster " + str(clusterId))
 
         cluster_freq = all_clusters_list.count(clusterId)
-        percentage = (cluster_freq / 100) * len(all_clusters_list)
+        percentage = (cluster_freq) * len(all_clusters_list)
 
         cluster = Cluster()
         cluster.cluster_id = str(clusterId)
