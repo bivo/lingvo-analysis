@@ -1,6 +1,7 @@
 
 class Report(object):
-    html_table = ""
+    raw_data_table = ""
+    cluster_table = ""
     objects_count = ""
     objects_list = []
     clusters_count = ""
@@ -11,6 +12,10 @@ class Report(object):
 
 
 class Cluster(object):
-    cluster_id = ""
-    cluster_name = ""
-    cluster_percentage = ""
+    id = ""
+    name = ""
+    percentage = ""
+
+    stat_mid = ""
+    stat_min = ""
+    stat_mix = ""

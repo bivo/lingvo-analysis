@@ -1,6 +1,6 @@
 import sys
 import getopt
-from AnalysisModule import analyse
+from LingvoAnalysisModule import lingvo
 from ClusteringModule import time_series
 
 
@@ -13,7 +13,7 @@ def main():
         sys.exit(2)
 
     clusters = time_series.entry_point('data/time_series.csv')
-    analyse.entry_point(filename, clusters)
+    lingvo.entry_point(filename, clusters)
     print("Success!")
 
 

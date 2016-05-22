@@ -23,11 +23,11 @@
                 {% endfor %}.
             </p>
             <p><strong>Объекты были сгруппированы</strong> в <span class="label label-success">{{ clusters_count }}</span> кластера(-ов).</p>
-            <p>Список кластеров:
-                {% for item in cluster_names %}
-                    <span class="label label-success">«{{ item }}»</span>
-                {% endfor %}.
-            </p>
+            <!--<p>Список кластеров:-->
+                <!--{% for item in cluster_names %}-->
+                    <!--<span class="label label-success">{{ item }}</span>-->
+                <!--{% endfor %}.-->
+            <!--</p>-->
             <!--<p>Количество объектов можно изменять, количество кластеров изменять («можно» или «нельзя»).</p>-->
 
             <p><strong>Большинство</strong> объектов исследования сгруппированы в кластере <span class="label label-success">{{ most_popular_cluster }}</span>.</p>
@@ -36,25 +36,30 @@
         </div>
 
         <br />
-        <h3>Исходные данные для анализа</h3>
-        <div style="padding: 0 25px; margin-left: 0;" >{{ html_table }}</div>
+        <h3>Распределение объектов по кластерам</h3>
+        <div style="padding: 0 25px; margin-left: 0;" >{{ cluster_table }}</div>
 
         <br />
-        <h3>Характеристика каждого кластера</h3>
+        <h3>Исходные данные по объектам в графическом виде</h3>
+        <div style="padding: 0 25px; margin-left: 0; text-align: center;" >
+            <img src="cluster_fig.png">
+        </div>
+
+        <br />
+        <h3>Характеристики каждого кластера</h3>
 
         {% for cluster in all_clusters %}
-
-            <p><span class="label label-default">#ID: {{ cluster.cluster_id }}</span> <span class="label label-info">{{ cluster.cluster_name }}</span></p>
+            <p><span class="label label-default">#ID: {{ cluster.id }}</span></p>
 
             <div style="padding-left: 25px;">
-                <p>Содержит <span class="label label-success">{{ cluster.cluster_percentage }}%</span> исследуемых объектов.</p>
+                <p>Содержит <span class="label label-success">{{ cluster.percentage }}%</span> исследуемых объектов.</p>
 
-                <p><strong><span class="glyphicon glyphicon-th-large"></span> Характеристика признаков по которым проводилась кластеризация в кластере:</strong></p>
+                <p><strong><span class="glyphicon glyphicon-th-large"></span> Характеристика признаков по которым проводилась кластеризация:</strong></p>
                 <div style="padding-left: 25px;">
                     <p><span class="label label-primary">{{ attribute_name }}</span></p>
-                    <p><u>Среднее значение</u>: <span class="label label-success">{{ mid_value }}</span></p>
-                    <p><u>Минимальное значение</u>: <span class="label label-success">{{ min_value }}</span></p>
-                    <p><u>Максимальное значение</u>: <span class="label label-success">{{ max_value }}</span></p>
+                    <p><u>Среднее значение</u>: <span class="label label-success">{{ cluster.stat_mid }}</span></p>
+                    <p><u>Минимальное значение</u>: <span class="label label-success">{{ cluster.stat_min }}</span></p>
+                    <p><u>Максимальное значение</u>: <span class="label label-success">{{ cluster.stat_max }}</span></p>
                 </div>
 
                 <p><strong><span class="glyphicon glyphicon-time"></span> Темпоральная характеристика по типам тенденции</strong>:</p>
@@ -70,8 +75,11 @@
                     <p>Наименьшее количество <span class="label label-success">объектов исследования</span> относятся к <span class="label label-success">наименование географического места</span> (или другого пространства), что составляет <span class="label label-success">столько-то процентов</span>. Или <span class="label label-success">объекты исследования</span> равномерно распределены в пространстве <span class="label label-success">наименование пространства</span>).</p>
                 </div>
             </div>
-
         {% endfor %}
+
+        <br />
+        <h3>Исходные данные для анализа</h3>
+        <div style="padding: 0 25px; margin-left: 0;" >{{ raw_data_table }}</div>
 
         <script src="res/js/jquery.min.js"></script>
         <script src="res/js/bootstrap.min.js"></script>

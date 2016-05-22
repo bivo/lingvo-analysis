@@ -1,13 +1,13 @@
-import numpy as np
 from jinja2 import FileSystemLoader, Environment
 from pandas import read_csv
 from collections import Counter
 
-from AnalysisModule.objects import Report, Cluster
+from LingvoAnalysisModule.objects import Report, Cluster
 
 # Some global vars
 data_frame = None
 time_series_clusters = None
+css_classes = ["table", "table-striped", "table-bordered", "table-hover", "table-condensed"]
 
 
 def entry_point(filename, clusters):
@@ -18,29 +18,29 @@ def entry_point(filename, clusters):
 
 def start_analysis(clusters):
     all_clusters_list = clusters.values.flatten().tolist()
-    unique_clusters = set(all_clusters_list)
-    cluster_statistics = Counter(all_clusters_list)
+    all_clusters_set = set(all_clusters_list)
+    clusters_statistics = Counter(all_clusters_list)
 
     report = Report()
-    report.html_table = data_frame.to_html(classes=["table", "table-striped", "table-bordered", "table-hover", "table-condensed"])
+    report.raw_data_table = data_frame.to_html(classes=css_classes)
+    report.cluster_table = clusters.to_html(classes=css_classes, header=False)
     report.objects_count = len(data_frame.columns)
     report.objects_list = data_frame.columns
-    report.clusters_count = len(unique_clusters)
-    report.cluster_names = unique_clusters
-    report.most_popular_cluster = cluster_statistics.most_common(1)[0][0]
-    report.least_popular_cluster = cluster_statistics.most_common()[:-1-1:-1][0][0]
+    report.clusters_count = len(all_clusters_set)
+    report.most_popular_cluster = clusters_statistics.most_common(1)[0][0]
+    report.least_popular_cluster = clusters_statistics.most_common()[:-1-1:-1][0][0]
 
     report.all_clusters = []
-    for clusterId in unique_clusters:
-        # print("Cluster " + str(clusterId))
-
+    for clusterId in all_clusters_set:
         cluster_freq = all_clusters_list.count(clusterId)
-        percentage = (cluster_freq) * len(all_clusters_list)
+        percentage = cluster_freq * (len(all_clusters_list) + 2)
 
         cluster = Cluster()
-        cluster.cluster_id = str(clusterId)
-        cluster.cluster_name = "Кластер " + str(clusterId)
-        cluster.cluster_percentage = percentage
+        cluster.id = str(clusterId)
+        cluster.percentage = percentage
+        cluster.stat_mid = 5
+        cluster.stat_min = 1
+        cluster.stat_max = 10
 
         report.all_clusters.append(cluster)
 
@@ -50,8 +50,6 @@ def start_analysis(clusters):
 def read_file(filename):
     global data_frame
     data_frame = read_csv(filename, sep=',', index_col=0)
-    # print("Результат:")
-    # print(data_frame)
 
 
 def render_result(**kwargs):
@@ -59,5 +57,5 @@ def render_result(**kwargs):
     env = Environment(loader=loader)
     template = env.get_template("template.html")
     rendered_template = template.render(**kwargs)
-    with open("result.html", "w") as file:
+    with open("output/report.html", "w") as file:
         file.write(rendered_template)

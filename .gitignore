@@ -62,5 +62,6 @@ target/
 .ipynb_checkpoints
 
 #Custom
-result.html
+output/report.html
 .idea/
+output/cluster_fig.png
