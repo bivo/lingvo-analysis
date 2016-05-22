@@ -26,6 +26,7 @@ def start_analysis(clusters):
     report.cluster_table = clusters.to_html(classes=css_classes, header=False)
     report.objects_count = len(data_frame.columns)
     report.objects_list = data_frame.columns
+    report.spaces_names = set(data_frame.loc["Пространство"])
     report.clusters_count = len(all_clusters_set)
     report.most_popular_cluster = clusters_statistics.most_common(1)[0][0]
     report.least_popular_cluster = clusters_statistics.most_common()[:-1-1:-1][0][0]

@@ -5,7 +5,7 @@ class Report(object):
     objects_count = ""
     objects_list = []
     clusters_count = ""
-    cluster_names = []
+    spaces_names = []
     most_popular_cluster = ""
     least_popular_cluster = ""
     all_clusters = []
