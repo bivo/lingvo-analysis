@@ -1,6 +1,7 @@
-pandas==0.18.0
+pandas==0.18.1
 jinja2==2.8
 matplotlib==1.5.1
 Statsmodels==0.6.1
 scikit-learn==0.17.1
 sklearn
+scipy

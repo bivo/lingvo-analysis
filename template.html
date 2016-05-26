@@ -57,33 +57,35 @@
 
             <div class="block">
                 <div class="panel panel-success">
-                    <div class="panel-heading"><span class="label label-success">#ID: {{ cluster.id }}</span></div>
+                    <div class="panel-heading">
+                        <span class="label label-success">#ID: {{ cluster.id }}</span>
+                        <span style="display: inline-block; width: 70px;"></span>
+                        Содержит <span class="label label-success">{{ cluster.percentage }}%</span> исследуемых объектов
+                    </div>
                     <div class="panel-body">
 
-                        <p>Содержит <span class="label label-success">{{ cluster.percentage }}%</span> исследуемых объектов.</p>
-
-                        <p><strong><span class="glyphicon glyphicon-th-large"></span> Характеристика признаков внутри кластера:</strong></p>
+                        <p><strong><span class="glyphicon glyphicon-th-large"></span> Характеристика признаков внутри кластера</strong></p>
                         <div class="block">
                             <p><span class="label label-primary">{{ attribute_name }}</span></p>
+                            <p>Максимальное значение: <span class="label label-success">{{ cluster.stat_max }}</span></p>
                             <p>Среднее значение: <span class="label label-success">{{ cluster.stat_mid }}</span></p>
                             <p>Минимальное значение: <span class="label label-success">{{ cluster.stat_min }}</span></p>
-                            <p>Максимальное значение: <span class="label label-success">{{ cluster.stat_max }}</span></p>
                         </div>
 
-                        <p><strong><span class="glyphicon glyphicon-time"></span> Темпоральная характеристика по типам тенденции</strong>:</p>
+                        <!--<p><strong><span class="glyphicon glyphicon-time"></span> Темпоральная характеристика по типам тенденции</strong>:</p>-->
                         <!-- типы тенденции: рост,падение,стабильность -->
-                        <div class="block">
-                            <p>Типичная тенденция <span class="label label-success">тип тенденции</span> соответствует <span class="label label-success">наименование признака 1</span> и составляет <span class="label label-success">столько</span> процентов.</p>
-                            <p>Нетипичная тенденция <span class="label label-success">тип тенденции</span> соответствует <span class="label label-success">наименование признака К</span> и составляет <span class="label label-success">столько</span> процентов.</p>
-                            <p>Или тенденции в признаках распределены равномерно: Рост = «столько» процентов, Падение = «столько» процентов, Стабильность = «столько» процентов.</p>
-                        </div>
+                        <!--<div class="block">-->
+                            <!--<p>Типичная тенденция <span class="label label-success">тип тенденции</span> соответствует <span class="label label-success">наименование признака 1</span> и составляет <span class="label label-success">столько</span> процентов.</p>-->
+                            <!--<p>Нетипичная тенденция <span class="label label-success">тип тенденции</span> соответствует <span class="label label-success">наименование признака К</span> и составляет <span class="label label-success">столько</span> процентов.</p>-->
+                            <!--<p>Или тенденции в признаках распределены равномерно: Рост = «столько» процентов, Падение = «столько» процентов, Стабильность = «столько» процентов.</p>-->
+                        <!--</div>-->
 
-                        <p><strong><span class="glyphicon glyphicon-map-marker"></span> Пространственное распределение в кластере:</strong></p>
-                        <div class="block">
-                            <p>Большинство объектов исследования относятся к <span class="label label-success">наименование географического места</span> (или другого пространства ), что составляет <span class="label label-success">столько-то процентов</span>.</p>
-                            <p>Наименьшее количество объектов исследования относятся к <span class="label label-success">наименование географического места</span> (или другого пространства), что составляет <span class="label label-success">столько-то процентов</span>.</p>
-                            <p>Или объекты исследования равномерно распределены в пространстве <span class="label label-success">наименование пространства</span>).</p>
-                        </div>
+                        <!--<p><strong><span class="glyphicon glyphicon-map-marker"></span> Пространственное распределение в кластере:</strong></p>-->
+                        <!--<div class="block">-->
+                            <!--<p>Большинство объектов исследования относятся к <span class="label label-success">наименование географического места</span> (или другого пространства ), что составляет <span class="label label-success">столько-то процентов</span>.</p>-->
+                            <!--<p>Наименьшее количество объектов исследования относятся к <span class="label label-success">наименование географического места</span> (или другого пространства), что составляет <span class="label label-success">столько-то процентов</span>.</p>-->
+                            <!--<p>Или объекты исследования равномерно распределены в пространстве <span class="label label-success">наименование пространства</span>).</p>-->
+                        <!--</div>-->
 
                     </div>
                 </div>

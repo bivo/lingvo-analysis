@@ -1,6 +1,7 @@
 from jinja2 import FileSystemLoader, Environment
 from pandas import read_csv
 from collections import Counter
+import scipy
 
 from LingvoAnalysisModule.objects import Report, Cluster
 
@@ -31,17 +32,32 @@ def start_analysis(clusters):
     report.most_popular_cluster = clusters_statistics.most_common(1)[0][0]
     report.least_popular_cluster = clusters_statistics.most_common()[:-1-1:-1][0][0]
 
+    values_stat = {}
+    i = 0
+    for column, series in data_frame.iteritems():
+        series = series.drop("Пространство")
+        series = [int(x) for x in series.tolist()]
+        values_stat[i] = (int(max(series)), int(scipy.mean(series)), int(min(series)))
+        i += 1
+
     report.all_clusters = []
     for clusterId in all_clusters_set:
         cluster_freq = all_clusters_list.count(clusterId)
         percentage = cluster_freq * (len(all_clusters_list) + 2)
 
+        all_max, all_mid, all_min = [], [], []
+        for index, cl in enumerate(clusters.values):
+            if clusters.values[index][0] == clusterId:
+                all_max.append(values_stat[index][0])
+                all_mid.append(values_stat[index][1])
+                all_min.append(values_stat[index][2])
+
         cluster = Cluster()
         cluster.id = str(clusterId)
         cluster.percentage = percentage
-        cluster.stat_mid = 5
-        cluster.stat_min = 1
-        cluster.stat_max = 10
+        cluster.stat_max = int(max(all_max))
+        cluster.stat_mid = int(scipy.mean(all_mid))
+        cluster.stat_min = int(min(all_min))
 
         report.all_clusters.append(cluster)
 
