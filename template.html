@@ -93,9 +93,20 @@
 
         {% endfor %}
 
+        <h3>Неклассифицированные объекты</h3>
+        <p>Исходные данные по объектам в графическом виде</p>
+        <div class="block" style="text-align: center;" >
+            <img src="non_classified.png">
+        </div>
+        <div class="block">
+            <p><strong>Общее количество</strong> исследуемых объектов: <span class="label label-success">{{ non_classified_objects_count }}</span>.</p>
+        </div>
+        <h3>Предсказанные классы объектов</h3>
+        <div class="block">{{ non_classified_objects }}</div>
+
         <br />
         <h3>Исходные данные для анализа</h3>
-        <div class="block">{{ raw_data_table }}</div>
+        <div class="block block--scrollable">{{ raw_data_table }}</div>
 
         <script src="res/js/jquery.min.js"></script>
         <script src="res/js/bootstrap.min.js"></script>

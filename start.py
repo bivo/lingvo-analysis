@@ -2,7 +2,7 @@ import sys
 import getopt
 from LingvoAnalysisModule import lingvo
 from ClusteringModule import time_series
-
+from ClassifierModule import classifier
 
 def main():
     try:
@@ -12,8 +12,9 @@ def main():
         print("Enter CSV filename as argument!")
         sys.exit(2)
 
-    clusters = time_series.entry_point('data/time_series.csv')
-    lingvo.entry_point(filename, clusters)
+    clusters, models, indexes = time_series.entry_point('data/time_series.csv')
+    classes, non_classified_frame = classifier.entry_point('not_classified.csv', models, indexes)
+    lingvo.entry_point(filename, clusters, classes, non_classified_frame)
     print("Success!")
 
 
