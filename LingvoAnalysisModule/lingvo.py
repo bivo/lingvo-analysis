@@ -11,13 +11,13 @@ time_series_clusters = None
 css_classes = ["table", "table-striped", "table-bordered", "table-hover", "table-condensed"]
 
 
-def entry_point(filename, clusters):
+def entry_point(filename, clusters, classes, non_classified):
     read_file(filename)
-    result = start_analysis(clusters)
+    result = start_analysis(clusters, classes, non_classified)
     render_result(**result.__dict__)
 
 
-def start_analysis(clusters):
+def start_analysis(clusters, classes, non_classified):
     all_clusters_list = clusters.values.flatten().tolist()
     all_clusters_set = set(all_clusters_list)
     clusters_statistics = Counter(all_clusters_list)
@@ -31,6 +31,12 @@ def start_analysis(clusters):
     report.clusters_count = len(all_clusters_set)
     report.most_popular_cluster = clusters_statistics.most_common(1)[0][0]
     report.least_popular_cluster = clusters_statistics.most_common()[:-1-1:-1][0][0]
+
+    # Non classified
+    report.non_classified_objects_list = non_classified.columns
+    report.non_classified_objects_count = len(non_classified.columns)
+    report.non_classified_classes = classes.values.flatten().tolist()
+    report.non_classified_objects = classes.to_html(classes=css_classes, header=False)
 
     values_stat = {}
     i = 0
