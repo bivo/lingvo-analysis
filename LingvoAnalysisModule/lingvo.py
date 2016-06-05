@@ -24,6 +24,7 @@ def start_analysis(clusters, classes, non_classified):
 
     report = Report()
     report.raw_data_table = data_frame.to_html(classes=css_classes)
+    report.raw_geo_table = read_geo().to_html(classes=css_classes)
     report.cluster_table = clusters.to_html(classes=css_classes, header=False)
     report.objects_count = len(data_frame.columns)
     report.objects_list = data_frame.columns
@@ -73,6 +74,10 @@ def start_analysis(clusters, classes, non_classified):
 def read_file(filename):
     global data_frame
     data_frame = read_csv(filename, sep=',', index_col=0)
+
+
+def read_geo():
+    return read_csv("data/geo.csv", sep=',', index_col=0)
 
 
 def render_result(**kwargs):

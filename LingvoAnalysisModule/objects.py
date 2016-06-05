@@ -1,6 +1,7 @@
 
 class Report(object):
     raw_data_table = ""
+    raw_geo_table = ""
     cluster_table = ""
     objects_count = ""
     objects_list = []
