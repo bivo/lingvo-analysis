@@ -10,6 +10,7 @@ class Report(object):
     most_popular_cluster = ""
     least_popular_cluster = ""
     all_clusters = []
+    trends_table = ""
 
 
 class Cluster(object):

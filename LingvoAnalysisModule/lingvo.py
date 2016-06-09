@@ -32,6 +32,7 @@ def start_analysis(clusters, classes, non_classified):
     report.clusters_count = len(all_clusters_set)
     report.most_popular_cluster = clusters_statistics.most_common(1)[0][0]
     report.least_popular_cluster = clusters_statistics.most_common()[:-1-1:-1][0][0]
+    report.trends_table = lingvo_scale(data_frame)
 
     # Non classified
     report.non_classified_objects_list = non_classified.columns
@@ -69,6 +70,36 @@ def start_analysis(clusters, classes, non_classified):
         report.all_clusters.append(cluster)
 
     return report
+
+
+def lingvo_scale(data_frame):
+    scale = []
+    for column, series in data_frame.iteritems():
+        series = series.drop("Пространство")
+
+        start_value = int(series[0])
+        end_value = int(series[-1])
+        growth_times = end_value if start_value == 0 else float(end_value / start_value)
+
+        if growth_times <= 0.5:
+            desc, css_class = "Сильное падение", "danger"
+        elif end_value < start_value:
+            desc, css_class = "Падение", "danger"
+        elif 1 <= growth_times <= 2:
+            desc, css_class = "Ровный тренд", "info"
+        elif growth_times >= 10:
+            desc, css_class = "Бурный рост", "success"
+        elif 2 <= growth_times <= 10:
+            desc, css_class = "Рост", "success"
+
+        scale.append({"object_name": column,
+                      "start_value": start_value,
+                      "end_value": end_value,
+                      "growth": "%.1f" % growth_times,
+                      "desc": desc,
+                      "css_class": css_class})
+
+    return scale
 
 
 def read_file(filename):

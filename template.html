@@ -41,6 +41,44 @@
         </div>
 
         <br />
+        <h3>Лингвистический анализ тенденций роста/падения</h3>
+        <div class="block">
+            <i>
+                Лингвистическая шкала:
+                <ul>
+                    <li class="text-danger">Сильное падение - падение на 50% или более</li>
+                    <li class="text-danger">Падение - значение на конечный момент времени меньше значения на начальный момент времени</li>
+                    <li class="text-primary">Ровный тренд - рост не более чем в 2 раза</li>
+                    <li class="text-success">Рост - рост от 2 до 10 раз</li>
+                    <li class="text-success">Бурный рост - рост более чем в 10 раз</li>
+                </ul>
+            </i>
+
+            <table border="1" class="dataframe table table-striped table-bordered table-hover table-condensed">
+                <thead>
+                    <tr style="text-align: right;">
+                        <th>Объект</th>
+                        <th>Начало временного ряда</th>
+                        <th>Конец временного ряда</th>
+                        <th>Рост (раз)</th>
+                        <th>Описание тренда</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for trend in trends_table %}
+                        <tr>
+                            <th>{{ trend.object_name }}</th>
+                            <td>{{ trend.start_value }}</td>
+                            <td>{{ trend.end_value }}</td>
+                            <td class="{{ trend.css_class }}">{{ trend.growth }}</td>
+                            <td>{{ trend.desc }}</td>
+                        </tr>
+                    {% endfor %}
+               </tbody>
+            </table>
+        </div>
+
+        <br />
         <h3>Распределение объектов по кластерам</h3>
         <div class="block">{{ cluster_table }}</div>
 
