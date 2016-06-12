@@ -1,77 +1,74 @@
-Vendor,Big Data Revenue,Total Revenue,Big Data Revenue as % of Total Revenue,% Big Data Hardware Revenue,% Big Data Software Revenue,% Big Data Services Revenue
-IBM,$1368,$99751,1%,31%,27%,42%
-HP,$869,$114100,1%,42%,14%,44%
-Dell,$652,$54550,1%,85%,0%,15%
-SAP,$545,$22900,2%,0%,76%,24%
-Teradata,$518,$2665,19%,36%,30%,34%
-Oracle,$491,$37552,1%,28%,37%,36%
-SAS Institute,$480,$3020,16%,0%,68%,32%
-Palantir,$418,$418,100%,0%,50%,50%
-Accenture,$415,$30606,1%,0%,0%,100%
-PWC,$312,$32580,1%,0%,0%,100%
-Deloitte,$305,$33050,1%,0%,0%,100%
-Pivotal,$300,$300,100%,15%,50%,35%
-Cisco Systems,$295,$50200,1%,72%,12%,16%
-Splunk,$283,$283,100%,0%,71%,29%
-Microsoft,$280,$83200,0%,0%,63%,37%
-Amazon,$275,$70000,1%,0%,0%,100%
-Hitachi,$260,$89999,1%,0%,0%,100%
-CSC,$188,$14200,1%,0%,0%,100%
-CenturyLink,$175,$13757,1%,0%,0%,100%
-Google,$175,$59767,1%,0%,0%,100%
-Fusion-io,$173,$401,43%,90%,0%,10%
-NetApp,$167,$6450,3%,73%,0%,27%
-Intel,$165,$52708,1%,66%,21%,13%
-EMC,$165,$23222,1%,74%,0%,26%
-Mu Sigma,$160,$160,100%,0%,0%,100%
-TCS,$157,$11570,1%,0%,0%,100%
-Microstrategy,$144,$576,25%,0%,68%,32%
-Actian,$138,$138,100%,0%,73%,27%
-Booz Allen Hamilton,$125,$5850,2%,0%,0%,100%
-Opera Solutions,$124,$124,100%,0%,0%,100%
-Red Hat,$109,$1437,8%,0%,78%,22%
-Capgemini,$104,$13639,1%,0%,0%,100%
-Informatica,$98,$948,10%,0%,82%,18%
-MarkLogic,$96,$96,100%,0%,79%,21%
-General Electric,$80,$146000,1%,0%,75%,25%
-VMware,$80,$5207,1%,0%,79%,21%
-Syncsort,$75,$75,100%,0%,97%,3%
-Cloudera,$73,$73,100%,0%,53%,47%
-SGI,$65,$667,10%,85%,0%,15%
-MongoDB,$62,$62,100%,0%,56%,44%
-Hortonworks,$55,$55,100%,0%,73%,27%
-DDN,$54,$315,17%,81%,0%,19%
-Guavus,$54,$54,100%,0%,61%,39%
-Alteryx,$48,$48,100%,0%,90%,10%
-1010data,$45,$45,100%,0%,0%,100%
-Rackspace,$42,$1520,3%,0%,0%,100%
-TIBCO,$36,$1069,3%,0%,64%,36%
-MapR,$35,$35,100%,0%,77%,23%
-Tableau Software,$33,$206,16%,0%,76%,24%
-Qlik,$30,$467,6%,0%,73%,27%
-Attivio,$29,$29,100%,0%,62%,38%
-Juniper,$28,$4669,1%,82%,0%,18%
-DataStax,$26,$26,100%,0%,85%,15%
-GoodData,$26,$78,33%,0%,0%,100%
-Attunity,$23,$30,77%,0%,74%,26%
-Fractal Analytics,$19,$27,70%,0%,0%,100%
-Pentaho,$18,$38,45%,0%,76%,24%
-Datameer,$17,$17,100%,0%,82%,18%
-Couchbase,$17,$17,100%,0%,71%,29%
-Basho,$16,$16,100%,0%,76%,24%
-Kognitio,$15,$15,100%,0%,47%,53%
-Sumo Logic,$14,$14,100%,0%,0%,100%
-Jaspersoft,$14,$34,41%,0%,64%,36%
-SiSense,$14,$14,100%,0%,79%,21%
-Talend,$14,$57,25%,71%,0%,29%
-Actuate,$13,$140,9%,0%,69%,31%
-Revolution Analytics,$12,$12,100%,0%,67%,33%
-Aerospike,$12,$12,100%,0%,92%,8%
-Neo Technologies,$12,$12,100%,0%,67%,33%
-Digital Reasoning,$11,$11,100%,0%,64%,36%
-Tresata,$10,$10,100%,0%,90%,10%
-Rainstor,$10,$10,100%,0%,70%,30%
-Think Big Analytics,$10,$10,100%,0%,0%,100%
-ODM,$3800,,,100%,0%,0%
-Other,$3030,,,27%,20%,53%
-Total,$18607,,,38%,22%,40%
+Vendor,Big Data Revenue,Big Data Revenue as of Total Revenue,Big Data Hardware Revenue,Big Data Software Revenue,Big Data Services Revenue
+IBM,1368,1,31,27,42
+HP,869,1,42,14,44
+Dell,652,1,85,0,15
+SAP,545,2,0,76,24
+Teradata,518,19,36,30,34
+Oracle,491,1,28,37,36
+SAS Institute,480,16,0,68,32
+Palantir,418,100,0,50,50
+Accenture,415,1,0,0,100
+PWC,312,1,0,0,100
+Deloitte,305,1,0,0,100
+Pivotal,300,100,15,50,35
+Cisco Systems,295,1,72,12,16
+Splunk,283,100,0,71,29
+Microsoft,280,0,0,63,37
+Amazon,275,1,0,0,100
+Hitachi,260,1,0,0,100
+CSC,188,1,0,0,100
+CenturyLink,175,1,0,0,100
+Google,175,1,0,0,100
+Fusion-io,173,43,90,0,10
+NetApp,167,3,73,0,27
+Intel,165,1,66,21,13
+EMC,165,1,74,0,26
+Mu Sigma,160,100,0,0,100
+TCS,157,1,0,0,100
+Microstrategy,144,25,0,68,32
+Actian,138,100,0,73,27
+Booz Allen Hamilton,125,2,0,0,100
+Opera Solutions,124,100,0,0,100
+Red Hat,109,8,0,78,22
+Capgemini,104,1,0,0,100
+Informatica,98,10,0,82,18
+MarkLogic,96,100,0,79,21
+General Electric,80,1,0,75,25
+VMware,80,1,0,79,21
+Syncsort,75,100,0,97,3
+Cloudera,73,100,0,53,47
+SGI,65,10,85,0,15
+MongoDB,62,100,0,56,44
+Hortonworks,55,100,0,73,27
+DDN,54,17,81,0,19
+Guavus,54,100,0,61,39
+Alteryx,48,100,0,90,10
+1010data,45,100,0,0,100
+Rackspace,42,3,0,0,100
+TIBCO,36,3,0,64,36
+MapR,35,100,0,77,23
+Tableau Software,33,16,0,76,24
+Qlik,30,6,0,73,27
+Attivio,29,100,0,62,38
+Juniper,28,1,82,0,18
+DataStax,26,100,0,85,15
+GoodData,26,33,0,0,100
+Attunity,23,77,0,74,26
+Fractal Analytics,19,70,0,0,100
+Pentaho,18,45,0,76,24
+Datameer,17,100,0,82,18
+Couchbase,17,100,0,71,29
+Basho,16,100,0,76,24
+Kognitio,15,100,0,47,53
+Sumo Logic,14,100,0,0,100
+Jaspersoft,14,41,0,64,36
+SiSense,14,100,0,79,21
+Talend,14,25,71,0,29
+Actuate,13,9,0,69,31
+Revolution Analytics,12,100,0,67,33
+Aerospike,12,100,0,92,8
+Neo Technologies,12,100,0,67,33
+Digital Reasoning,11,100,0,64,36
+Tresata,10,100,0,90,10
+Rainstor,10,100,0,70,30
+Think Big Analytics,10,100,0,0,100
