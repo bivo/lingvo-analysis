@@ -95,7 +95,7 @@ def count_clusters_statistics(all_clusters_list):
         least_popular.append(tuple2[0])
         least_popular.append(tuple3[0])
     else:
-        least_popular.append(tuple2[0])
+        least_popular.append(tuple3[0])
 
     return most_popular, least_popular
 
