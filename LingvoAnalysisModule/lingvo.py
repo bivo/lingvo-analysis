@@ -230,5 +230,5 @@ def render_result(**kwargs):
     env = Environment(loader=loader)
     template = env.get_template("template.html")
     rendered_template = template.render(**kwargs)
-    with open("output/report.html", "w") as file:
+    with open("output/index.html", "w") as file:
         file.write(rendered_template)
