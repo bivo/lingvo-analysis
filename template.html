@@ -34,61 +34,36 @@
 
             <p>Количество объектов изменять <span class="label label-success">можно</span>, количество кластеров изменять <span class="label label-danger">нельзя</span>.</p>
 
-            <p><strong>Большинство</strong> объектов исследования сгруппированы в кластере <span class="label label-success">{{ most_popular_cluster }}</span>.</p>
+            <p><strong>Большинство</strong> объектов исследования сгруппированы в кластерах: <span class="label label-success">{{ most_popular_cluster }}</span>.</p>
 
-            <p><strong>Наименьшее количество</strong> объектов исследования сгруппированы в кластере <span class="label label-success">{{ least_popular_cluster }}</span>.</p>
+            <p><strong>Наименьшее количество</strong> объектов исследования сгруппированы в кластерах: <span class="label label-success">{{ least_popular_cluster }}</span>.</p>
             <!--<p>Или «объекты исследования» сгруппированы в кластеры <strong>равномерно</strong>. (нужно предварительно определить лингвистические оценки «Большинство», «Меньшинство», «Равномерно»).</p>-->
         </div>
-
         <br />
-        <h3>Лингвистический анализ тенденций роста/падения</h3>
-        <div class="block">
-            <i>
-                Лингвистическая шкала:
-                <ul>
-                    <li class="text-danger">Сильное падение - падение на 50% или более</li>
-                    <li class="text-danger">Падение - значение на конечный момент времени меньше значения на начальный момент времени</li>
-                    <li class="text-primary">Ровный тренд - рост не более чем в 2 раза</li>
-                    <li class="text-success">Рост - рост от 2 до 10 раз</li>
-                    <li class="text-success">Бурный рост - рост более чем в 10 раз</li>
-                </ul>
-            </i>
 
-            <table border="1" class="dataframe table table-striped table-bordered table-hover table-condensed">
-                <thead>
-                    <tr style="text-align: right;">
-                        <th>Объект</th>
-                        <th>Начало временного ряда</th>
-                        <th>Конец временного ряда</th>
-                        <th>Рост (раз)</th>
-                        <th>Описание тренда</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {% for trend in trends_table %}
-                        <tr>
-                            <th>{{ trend.object_name }}</th>
-                            <td>{{ trend.start_value }}</td>
-                            <td>{{ trend.end_value }}</td>
-                            <td class="{{ trend.css_class }}">{{ trend.growth }}</td>
-                            <td>{{ trend.desc }}</td>
-                        </tr>
-                    {% endfor %}
-               </tbody>
-            </table>
-        </div>
-
-        <br />
-        <h3>Распределение объектов по кластерам</h3>
-        <div class="block">{{ cluster_table }}</div>
-
-        <br />
         <h3>Исходные данные по объектам в графическом виде</h3>
         <div class="block" style="text-align: center;" >
             <img src="cluster_fig.png">
         </div>
-
         <br />
+
+        <h3>Нечеткая шкала лингвистического резюмирования</h3>
+        <div class="block" style="font-style: italic;">
+            Описание (лингвистическая оценка, фактор изменения, комментарий):
+            <ul>
+                <li class="text-danger"><strong>High fall (0 - 0.5) - падение более чем на 50%</strong></li>
+                <li class="text-danger">Fall (0.5 - 0.99) - падение не более 50%</li>
+                <li class="text-muted">Flat (1 - 2) - рост не более чем в 2 раза</li>
+                <li class="text-success">Growth (2 - 10) - рост от 2 до 10 раз</li>
+                <li class="text-success"><strong>High growth (10 - 40) - рост от 10 до 40 раз</strong></li>
+            </ul>
+        </div>
+
+        <div class="block" style="text-align: center;">
+            <img src="fuzzy_scale.png">
+        </div>
+        <br />
+
         <h3>Характеристики каждого кластера</h3>
 
         {% for cluster in all_clusters %}
@@ -102,6 +77,14 @@
                     </div>
                     <div class="panel-body">
 
+                        <p><strong><span class="glyphicon glyphicon-th-list"></span> Объекты вошедшие в кластер</strong></p>
+                        <div class="block">
+                            {% for el in cluster.objects %}
+                                <span class="label label-success">{{ el }}</span>
+                            {% endfor %}
+                        </div>
+                        <br />
+
                         <p><strong><span class="glyphicon glyphicon-th-large"></span> Характеристика признаков внутри кластера</strong></p>
                         <div class="block">
                             <p><span class="label label-primary">{{ attribute_name }}</span></p>
@@ -109,6 +92,18 @@
                             <p>Среднее значение: <span class="label label-success">{{ cluster.stat_mid }}</span></p>
                             <p>Минимальное значение: <span class="label label-success">{{ cluster.stat_min }}</span></p>
                         </div>
+
+                        <p><strong><span class="glyphicon glyphicon-signal"></span> Лингвистическое резюмирование тенденции роста/падения</strong></p>
+                        <div class="block">
+                            <p>Фактор изменения тренда: <span class="label label-{{ cluster.lingvo_result[1] }}">{{ cluster.lingvo_result[0] }}</span></p>
+                            <p>Лингвистическая оценка:
+                                <span class="label label-{{ cluster.lingvo_result[1] }}">
+                                    <span class="glyphicon {{ cluster.lingvo_result[2] }}"></span> {{ cluster.lingvo_result[3] }}
+                                </span>
+                            </p>
+                            <img src="{{ cluster.lingvo_result[4] }}">
+                        </div>
+                        <br />
 
                         <!--<p><strong><span class="glyphicon glyphicon-time"></span> Темпоральная характеристика по типам тенденции</strong>:</p>-->
                         <!-- типы тенденции: рост,падение,стабильность -->
@@ -130,6 +125,7 @@
             </div>
 
         {% endfor %}
+        <br />
 
         <h3>Неклассифицированные объекты</h3>
         <p>Исходные данные по объектам в графическом виде</p>
