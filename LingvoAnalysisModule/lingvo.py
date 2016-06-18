@@ -10,29 +10,38 @@ from LingvoAnalysisModule.objects import Report, Cluster
 
 # Some global vars
 data_frame = None
+geo_frame = None
 time_series_clusters = None
 css_classes = ["table", "table-striped", "table-bordered", "table-hover", "table-condensed"]
 
 
-def entry_point(filename, clusters, classes, non_classified):
-    read_file(filename)
-    result = start_analysis(clusters, classes, non_classified)
+def entry_point(clusters, geo_clusters, classes, non_classified):
+    read_files('clustered_data.csv', 'revenue.csv')
+    result = start_analysis(clusters, geo_clusters, classes, non_classified)
     render_result(**result.__dict__)
 
 
-def start_analysis(clusters, classes, non_classified):
+def start_analysis(clusters, geo_clusters, classes, non_classified):
     all_clusters_list = clusters.values.flatten().tolist()
     all_clusters_set = set(all_clusters_list)
+
+    geo_clusters_list = geo_clusters.values.flatten().tolist()
+    geo_clusters_set = set(all_clusters_list)
 
     report = Report()
     report.raw_data_table = data_frame.to_html(classes=css_classes)
     report.raw_geo_table = read_geo().to_html(classes=css_classes)
     report.objects_count = len(data_frame.columns)
+    report.geo_objects_count = len(geo_frame.ix[:, 0])
     report.objects_list = data_frame.columns
+    report.geo_objects_list = geo_frame.ix[:, 0].keys()
     report.spaces_names = set(data_frame.loc["Пространство"])
     report.clusters_count = len(all_clusters_set)
+    report.geo_clusters_count = len(geo_clusters_set)
     report.most_popular_cluster = count_clusters_statistics(all_clusters_list)[0]
+    report.geo_most_popular_cluster = count_clusters_statistics(geo_clusters_list)[0]
     report.least_popular_cluster = count_clusters_statistics(all_clusters_list)[1]
+    report.geo_least_popular_cluster = count_clusters_statistics(geo_clusters_list)[1]
 
     cluster_elements = {0: [], 1: [], 2: [], 3: []}
     for i in clusters.iterrows():
@@ -216,13 +225,16 @@ def fuzzy_lingvo_scale(objects, cluster_id):
     return str("%.2f" % tendency), data_for_ui[0], data_for_ui[1], data_for_ui[2], img
 
 
-def read_file(filename):
+def read_files(time_filename, geo_filename):
     global data_frame
-    data_frame = read_csv(filename, sep=",", index_col=0)
+    data_frame = read_csv(time_filename, sep=",", index_col=0)
+
+    global geo_frame
+    geo_frame = read_csv(geo_filename, sep=",", index_col=0)
 
 
 def read_geo():
-    return read_csv("data/geo.csv", sep=",", index_col=0)
+    return read_csv("data/revenue.csv", sep=",", index_col=0)
 
 
 def render_result(**kwargs):

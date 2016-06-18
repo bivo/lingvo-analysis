@@ -9,7 +9,7 @@ def entry_point(filename):
 
     result = pd.DataFrame(data=indexes, index=series.ix[:, 0], dtype=object)
 
-    return result, models, indexes
+    return result
 
 
 def build_models(series):
