@@ -26,7 +26,7 @@ def start_analysis(clusters, geo_clusters, classes, non_classified):
     all_clusters_set = set(all_clusters_list)
 
     geo_clusters_list = geo_clusters.values.flatten().tolist()
-    geo_clusters_set = set(all_clusters_list)
+    geo_clusters_set = set(geo_clusters_list)
 
     report = Report()
     report.raw_data_table = data_frame.to_html(classes=css_classes)
@@ -91,10 +91,10 @@ def start_analysis(clusters, geo_clusters, classes, non_classified):
     report.geo_clusters = []
     for cluster_id in geo_clusters_set:
         cluster_freq = geo_clusters_list.count(cluster_id)
-        percentage = cluster_freq * (len(geo_clusters_list) + 2)
+        percentage = round(cluster_freq * 100 / len(geo_clusters_list))
 
         cluster = GeoCluster()
-        cluster.id = str(cluster_id)
+        cluster.id = str(cluster_id + 1)
         cluster.percentage = percentage
         cluster.objects = geo_cluster_elements[cluster_id]
         report.geo_clusters.append(cluster)
