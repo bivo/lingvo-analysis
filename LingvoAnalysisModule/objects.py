@@ -13,6 +13,7 @@ class Report(object):
     least_popular_cluster = ""
     geo_least_popular_cluster = ""
     all_clusters = []
+    geo_clusters = []
 
 
 class Cluster(object):
@@ -25,3 +26,13 @@ class Cluster(object):
     stat_mid = ""
     stat_min = ""
     stat_mix = ""
+
+
+class GeoCluster(object):
+    id = ""
+    percentage = ""
+    objects = []
+
+    big_data_percent = ""
+    average_profit = ""
+    dominating_segment = ""

@@ -212,25 +212,24 @@
             <br />
 
             <h3>Нечеткая шкала лингвистического резюмирования</h3>
-            <!--<div class="block" style="font-style: italic;">
+            <div class="block" style="font-style: italic;">
                 Описание (лингвистическая оценка, фактор изменения, комментарий):
                 <ul>
-                    <li class="text-danger"><strong>High fall (0 - 0.5) - падение более чем на 50%</strong></li>
-                    <li class="text-danger">Fall (0.5 - 0.99) - падение не более 50%</li>
-                    <li class="text-muted">Flat (1 - 2) - рост не более чем в 2 раза</li>
-                    <li class="text-success">Growth (2 - 10) - рост от 2 до 10 раз</li>
-                    <li class="text-success"><strong>High growth (10 - 40) - рост от 10 до 40 раз</strong></li>
+                    <li class="text-danger"><strong>(0% - 5%) - незначительная доля прибыли</strong></li>
+                    <li class="text-danger">(5% - 30%) - малая доля прибыли</li>
+                    <li class="text-muted">(30% - 65%) - средняя доля прибыли</li>
+                    <li class="text-success">(65% - 100%) - основная доля прибыли</li>
                 </ul>
             </div>
 
             <div class="block" style="text-align: center;">
-                <img src="fuzzy_scale.png">
-            </div>-->
+                <img src="geo_fuzzy_scale.png">
+            </div>
             <br />
 
             <h3>Характеристики каждого кластера</h3>
 
-            <!--{% for cluster in all_clusters %}
+            {% for cluster in geo_clusters %}
 
                 <div class="block">
                     <div class="panel panel-success">
@@ -252,27 +251,15 @@
                             <p><strong><span class="glyphicon glyphicon-th-large"></span> Характеристика признаков внутри кластера</strong></p>
                             <div class="block">
                                 <p><span class="label label-primary">{{ attribute_name }}</span></p>
-                                <p>Максимальное значение: <span class="label label-success">{{ cluster.stat_max }}</span></p>
-                                <p>Среднее значение: <span class="label label-success">{{ cluster.stat_mid }}</span></p>
-                                <p>Минимальное значение: <span class="label label-success">{{ cluster.stat_min }}</span></p>
+                                <p>Доля выручки сегмента Big Data в общем объеме: <span class="label label-success">{{ cluster.big_data_percent }}</span></p>
+                                <p>Средний объем выручки: <span class="label label-success">{{ cluster.average_profit }}</span></p>
+                                <p>Доминирующий сегмент в выручке: <span class="label label-success">{{ cluster.dominating_segment }}</span></p>
                             </div>
-
-                            <p><strong><span class="glyphicon glyphicon-signal"></span> Лингвистическое резюмирование тенденции роста/падения</strong></p>
-                            <div class="block">
-                                <p>Фактор изменения тренда: <span class="label label-{{ cluster.lingvo_result[1] }}">{{ cluster.lingvo_result[0] }}</span></p>
-                                <p>Лингвистическая оценка:
-                                    <span class="label label-{{ cluster.lingvo_result[1] }}">
-                                        <span class="glyphicon {{ cluster.lingvo_result[2] }}"></span> {{ cluster.lingvo_result[3] }}
-                                    </span>
-                                </p>
-                                <img src="{{ cluster.lingvo_result[4] }}">
-                            </div>
-                            <br />
                         </div>
                     </div>
                 </div>
 
-            {% endfor %}-->
+            {% endfor %}
             <br />
 
             <br />
