@@ -32,7 +32,10 @@ class GeoCluster(object):
     id = ""
     percentage = ""
     objects = []
-
     big_data_percent = ""
+    lingvo_style = ""
+    lingvo_result = ""
+    graph = ""
+
     average_profit = ""
     dominating_segment = ""

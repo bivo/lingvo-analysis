@@ -66,4 +66,4 @@ output/index.html
 .idea/
 output/cluster_fig.png
 output/non_classified.png
-output/fuzzy_*
+output/*fuzzy*

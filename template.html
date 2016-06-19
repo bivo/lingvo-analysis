@@ -251,10 +251,25 @@
                             <p><strong><span class="glyphicon glyphicon-th-large"></span> Характеристика признаков внутри кластера</strong></p>
                             <div class="block">
                                 <p><span class="label label-primary">{{ attribute_name }}</span></p>
-                                <p>Доля выручки сегмента Big Data в общем объеме: <span class="label label-success">{{ cluster.big_data_percent }}</span></p>
-                                <p>Средний объем выручки: <span class="label label-success">{{ cluster.average_profit }}</span></p>
+                                <p>Средний объем выручки: <span class="label label-success">{{ cluster.average_profit }}</span>(млн $)</p>
                                 <p>Доминирующий сегмент в выручке: <span class="label label-success">{{ cluster.dominating_segment }}</span></p>
                             </div>
+
+                            <p><strong><span class="glyphicon glyphicon-signal"></span> Лингвистическое резюмирование доли выручки сегмента Big Data</strong></p>
+                            <div class="block">
+                                <p>Доля выручки сегмента Big Data в общем объеме:
+                                    <span class="label label-{{ cluster.lingvo_style }}">
+                                        {{ cluster.big_data_percent }}
+                                    </span>
+                                </p>
+                                <p>Лингвистическая оценка:
+                                    <span class="label label-{{ cluster.lingvo_style }}">
+                                        {{ cluster.lingvo_result }}
+                                    </span>
+                                </p>
+                                <img src="{{ cluster.graph }}">
+                            </div>
+                            <br />
                         </div>
                     </div>
                 </div>
