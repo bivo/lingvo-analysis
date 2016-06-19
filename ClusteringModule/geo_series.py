@@ -7,9 +7,9 @@ def entry_point(filename):
     models = build_models(series)
     indexes = clusterize(models)
 
-    result = pd.DataFrame(data=indexes, index=series.ix[:, 0], dtype=object)
+    result = pd.DataFrame(data=indexes, index=series.ix[:, 0].index, dtype=object)
 
-    return result, models, indexes
+    return result
 
 
 def build_models(series):
