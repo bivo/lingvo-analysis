@@ -13,15 +13,15 @@ def entry_point(filename):
 
     result = pd.DataFrame(data=indexes, index=series.columns, dtype=object)
 
-    return (result, models, indexes, scores)
+    return result, models, indexes, scores
 
 
 def build_models(series):
     models = []
     fig, ax = plt.subplots()
     for index, row in series.iteritems():
-        arma_mod = sm.tsa.ARMA(row, (3,0))
-        arma_res = arma_mod.fit(trend='nc', disp=-1, transparams=True)
+        arma_mod = sm.tsa.ARMA(row, (3, 0))
+        arma_res = arma_mod.fit(trend='nc', disp=-1, transparams=True, method='css')
         ax = row.ix['2004':].plot(ax=ax)
         models = np.append(models, arma_res.params.values)
 
