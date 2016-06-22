@@ -1,0 +1,1931 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"cros",
+				"cross_val"
+			],
+			[
+				"cross",
+				"cross_val"
+			],
+			[
+				"y_",
+				"y_train"
+			],
+			[
+				"x",
+				"X_train"
+			],
+			[
+				"clas",
+				"classifier"
+			],
+			[
+				"ten",
+				"tendency"
+			],
+			[
+				"laber",
+				"labels_true"
+			],
+			[
+				"pri",
+				"prediction"
+			],
+			[
+				"max-",
+				"max-height"
+			],
+			[
+				"non",
+				"non_classified_frame"
+			],
+			[
+				"train",
+				"train_targets"
+			],
+			[
+				"class",
+				"classifier"
+			],
+			[
+				"initi",
+				"initialize	(core.js)"
+			],
+			[
+				"finish",
+				"finishLoadAnimation	(component.js)"
+			],
+			[
+				"initia",
+				"initialCompiled"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"toggl",
+				"toggle_editor"
+			],
+			[
+				"togg",
+				"toggleBtn"
+			],
+			[
+				"checkout_fastlane_ship",
+				"checkout_fastlane_shipping_edit_link	(shipping_details.twig)"
+			],
+			[
+				"upda",
+				"updateMethod"
+			],
+			[
+				"ship",
+				"shippingMethod"
+			],
+			[
+				"shippingMe",
+				"shippingMethodsList	(selector.twig)"
+			],
+			[
+				"getMet",
+				"getMethodName	(selector.twig)"
+			],
+			[
+				"getShip",
+				"getShippingMethodsList	(selector.twig)"
+			],
+			[
+				"clal",
+				"callback"
+			],
+			[
+				"call",
+				"callback"
+			],
+			[
+				"Paym",
+				"PaymentSection"
+			],
+			[
+				"Shippin",
+				"ShippingDetails"
+			],
+			[
+				"Shipping",
+				"ShippingDetails	(ShippingDetails.php)"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"paddin",
+				"padding-right"
+			],
+			[
+				"isF",
+				"isFieldOnly	(cart_coupons.twig)"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"coll",
+				"collapsed"
+			],
+			[
+				"colla",
+				"collapser"
+			],
+			[
+				"icon",
+				"icon-plus--after"
+			],
+			[
+				"collap",
+				"collapsed"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"color-giht",
+				"color-highlight"
+			],
+			[
+				"screen-xs",
+				"screen-xs-max"
+			],
+			[
+				"toggle",
+				"toggleEditor"
+			],
+			[
+				"dis",
+				"disabled"
+			],
+			[
+				"pro",
+				"prototype"
+			],
+			[
+				"Lay",
+				"LayoutEditorPanel"
+			],
+			[
+				"in",
+				"instance"
+			],
+			[
+				"padd",
+				"padding-right"
+			],
+			[
+				"ve",
+				"vertical-align"
+			],
+			[
+				"min-",
+				"min-width"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"block",
+				"blockers"
+			],
+			[
+				"sections",
+				"sections_ready"
+			],
+			[
+				"reload",
+				"reloadingUnblock	(vue.loadable.js)"
+			],
+			[
+				"reloadin",
+				"reloadingBlock	(vue.loadable.js)"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"profile",
+				"profile-form"
+			],
+			[
+				"affix",
+				"affixTarget"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"cc-form",
+				"cc-form-container"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"assign",
+				"assignHandlers"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"Adress",
+				"AddressForm"
+			],
+			[
+				"sub",
+				"substep"
+			],
+			[
+				"subs",
+				"substep"
+			],
+			[
+				"font-si",
+				"font-size-small"
+			],
+			[
+				"rhyth",
+				"rhythmless"
+			],
+			[
+				"margin-",
+				"margin-left"
+			],
+			[
+				"font-",
+				"font-size-base"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"wid",
+				"widget_list	(slidebar.twig)"
+			],
+			[
+				"es",
+				"estimate-methods"
+			],
+			[
+				"isfi",
+				"isFieldOnly"
+			],
+			[
+				"Product",
+				"ProductCompareIndicator	(ProductCompareLink.php)"
+			],
+			[
+				"ProductCompa",
+				"ProductCompareIndicator"
+			],
+			[
+				"Pop",
+				"PopupLoginLink	(Main.php)"
+			],
+			[
+				"Recove",
+				"RecoverPassword"
+			],
+			[
+				"isRegi",
+				"isRegisterMode	(Main.php)"
+			],
+			[
+				"Account",
+				"AccountDialog	(AccountDialog.php)"
+			],
+			[
+				"foot",
+				"footer-area"
+			],
+			[
+				"social-lon",
+				"social-login-container"
+			],
+			[
+				"Soci",
+				"SocialLogin"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"target-che",
+				"target-checkoutPayment"
+			],
+			[
+				"float",
+				"floating-label"
+			],
+			[
+				"jus",
+				"justify-content"
+			],
+			[
+				"re",
+				"representation"
+			],
+			[
+				"auto",
+				"autoload"
+			],
+			[
+				"Produc",
+				"ProductFilterView"
+			],
+			[
+				"ProductFil",
+				"ProductFilterView	(script.js)"
+			],
+			[
+				"product-fil",
+				"product-filter-placeholder"
+			],
+			[
+				"produc",
+				"productFilter"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"display-mode",
+				"display-mode-box"
+			],
+			[
+				"cbox",
+				"cboxPrevious"
+			],
+			[
+				"cbo",
+				"cboxClose"
+			],
+			[
+				"cb",
+				"cboxMiddleRight"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"product-pho",
+				"product-photo-box"
+			],
+			[
+				"nam",
+				"namespace"
+			],
+			[
+				"screen-ma",
+				"screen-xs-max"
+			],
+			[
+				"disp",
+				"display"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"bord",
+				"border-bottom"
+			],
+			[
+				"shoppin",
+				"shopping-cart"
+			],
+			[
+				"mari",
+				"margin-right"
+			],
+			[
+				"selected-pro",
+				"selected-products"
+			],
+			[
+				"breac",
+				"breadcrumb	(bootstrap-changes.less)"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"items",
+				"items-list"
+			],
+			[
+				"Fast",
+				"FastLaneCheckout	(CheckoutFastlane.php)"
+			],
+			[
+				"make-sm-c",
+				"make-sm-column-offset"
+			],
+			[
+				"bread",
+				"breadcrumb	(Main.php)"
+			],
+			[
+				"conta",
+				"container"
+			],
+			[
+				"checkout",
+				"checkout_fastlane	(Main.php)"
+			],
+			[
+				"Dis",
+				"DiscountCouponsView"
+			],
+			[
+				"widget",
+				"widget_list"
+			],
+			[
+				"Subs",
+				"SubscribeBlock"
+			],
+			[
+				"back",
+				"background	(style.less)"
+			],
+			[
+				"News",
+				"NewsletterSubscriptions"
+			],
+			[
+				"checkout_fas",
+				"checkout_fastlane_section"
+			],
+			[
+				"che",
+				"checkout_fastlane_header"
+			],
+			[
+				"checkou",
+				"checkout_fastlane_header"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"chec",
+				"checkout_fastlane_address	(address.twig)"
+			],
+			[
+				"swti",
+				"switchTo"
+			],
+			[
+				"swit",
+				"switchTo	(address.twig)"
+			],
+			[
+				"count",
+				"countries"
+			],
+			[
+				"add",
+				"address"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "ClassifierModule/classifier.py",
+			"settings":
+			{
+				"buffer_size": 2372,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ClusteringModule/time_series.py",
+			"settings":
+			{
+				"buffer_size": 1703,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "template.html",
+			"settings":
+			{
+				"buffer_size": 6688,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "output/res/style.css",
+			"settings":
+			{
+				"buffer_size": 182,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "LingvoAnalysisModule/lingvo.py",
+			"settings":
+			{
+				"buffer_size": 3952,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "start.py",
+			"settings":
+			{
+				"buffer_size": 731,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 500.0,
+		"last_filter": "gi",
+		"selected_items":
+		[
+			[
+				"gi",
+				"Git: Blame"
+			],
+			[
+				"git",
+				"Git: Blame"
+			],
+			[
+				"whi",
+				"Whitespace: Remove Trailing Whitespace"
+			],
+			[
+				"g",
+				"Git: Blame"
+			],
+			[
+				"bla",
+				"Git: Blame"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Build: New Build System"
+			],
+			[
+				"php",
+				"PHP Code Sniffer: Switch coding standard"
+			],
+			[
+				"in",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"lig",
+				"Package Control: List Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"g\\",
+				"Xdebug: Add/Remove Breakpoint"
+			],
+			[
+				"gitb",
+				"Git: Blame"
+			]
+		],
+		"width": 670.0
+	},
+	"console":
+	{
+		"height": 140.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/daemos/repos/lingvo-analysis",
+		"/home/daemos/repos/lingvo-analysis/ClassifierModule",
+		"/home/daemos/repos/lingvo-analysis/ClusteringModule",
+		"/home/daemos/repos/lingvo-analysis/LingvoAnalysisModule",
+		"/home/daemos/repos/lingvo-analysis/output/res",
+		"/home/daemos/repos/lingvo-analysis/output/res/css"
+	],
+	"file_history":
+	[
+		"/etc/insserv.conf",
+		"/etc/fuse.conf",
+		"/etc/group-",
+		"/home/daemos/repos/test/src/skins/default/en/form_field/input/checkbox/module_switcher.twig",
+		"/home/daemos/repos/test/src/classes/XLite/View/FormField/Input/Checkbox.php",
+		"/home/daemos/repos/test/src/skins/default/en/modules/XC/FastLaneCheckout/blocks/payment_methods/payment-methods.js",
+		"/home/daemos/repos/test/src/skins/default/en/modules/XC/FastLaneCheckout/sections/section.js",
+		"/home/daemos/repos/test/src/skins/default/en/modules/XC/FastLaneCheckout/blocks/shipping_methods/shipping-methods.js",
+		"/home/daemos/repos/test/src/classes/XLite/Module/XC/FastLaneCheckout/View/CheckoutApp.php",
+		"/home/daemos/repos/test/src/classes/XLite/Module/XC/ESelectHPP/View/Config.php",
+		"/home/daemos/repos/test/src/var/log/php_errors.log.2016-06-02.php",
+		"/home/daemos/repos/test/src/var/log/php_errors.log.2016-05-30.php",
+		"/home/daemos/repos/test/src/skins/crisp_white/customer/en/modules/XC/FastLaneCheckout/blocks/address_form/style.less",
+		"/home/daemos/repos/test/src/skins/default/en/modules/CDev/RuTranslation/css/layout.css",
+		"/home/daemos/repos/test/src/skins/crisp_white/customer/en/modules/CDev/RuTranslation/css/layout.css",
+		"/home/daemos/repos/test/src/skins/default/en/modules/XC/FastLaneCheckout/checkout_fastlane/store.js",
+		"/home/daemos/repos/test/src/skins/default/en/modules/XC/FastLaneCheckout/checkout_fastlane/component.js",
+		"/home/daemos/repos/test/src/skins/common/vue/vue.loadable.js",
+		"/home/daemos/repos/test/src/skins/default/en/product/details/parts/attributes_modify/body.twig",
+		"/home/daemos/repos/test/src/classes/XLite/Model/Attribute.php",
+		"/home/daemos/repos/test/src/classes/XLite/View/Product/AttributeValue/Customer/Select.php",
+		"/home/daemos/repos/test/src/classes/XLite/View/Product/AttributeValue/Customer/ACustomer.php",
+		"/home/daemos/repos/test/src/skins/default/en/product/attribute_value/select/body.twig",
+		"/home/daemos/repos/test/src/skins/default/en/product/attribute_value/text/body.twig",
+		"/home/daemos/repos/test/src/skins/crisp_white/customer/en/css/bootstrap-changes.less",
+		"/home/daemos/repos/test/src/classes/XLite/Controller/Customer/Profile.php",
+		"/home/daemos/repos/test/src/classes/XLite/Controller/AController.php",
+		"/home/daemos/repos/test/src/skins/default/en/product/attribute_value/checkbox/body.twig",
+		"/home/daemos/repos/test/src/skins/crisp_white/customer/en/css/less/forms.less",
+		"/home/daemos/repos/test/src/skins/default/en/modules/XC/FastLaneCheckout/sections_navigation/template.twig",
+		"/home/daemos/repos/test/src/skins/crisp_white/customer/en/modules/XC/FastLaneCheckout/sections_navigation/template.twig",
+		"/home/daemos/repos/test/src/classes/XLite/View/Checkout/ShippingMethodsList.php",
+		"/home/daemos/repos/test/src/classes/XLite/Module/XC/FastLaneCheckout/View/Blocks/ShippingMethods/Selector.php",
+		"/home/daemos/repos/test/src/skins/crisp_white/customer/en/css/style.css",
+		"/home/daemos/repos/test/src/skins/crisp_white/customer/en/modules/XC/FastLaneCheckout/blocks/cart_items/style.less",
+		"/home/daemos/repos/test/src/skins/crisp_white/customer/en/modules/XC/FastLaneCheckout/sections_navigation/style.less",
+		"/home/daemos/repos/test/src/skins/crisp_white/customer/en/modules/XC/FastLaneCheckout/blocks/payment_methods/style.less",
+		"/home/daemos/repos/test/src/skins/crisp_white/customer/en/modules/XC/FastLaneCheckout/blocks/shipping_methods/style.less",
+		"/home/daemos/repos/test/src/skins/default/en/checkout/steps/shipping/parts/shippingMethodsList.twig",
+		"/home/daemos/repos/test/src/skins/default/en/modules/XC/FastLaneCheckout/sections/payment/place-order.js",
+		"/home/daemos/repos/test/src/classes/XLite/View/ShippingList.php",
+		"/home/daemos/repos/test/src/skins/crisp_white/customer/en/css/print.css",
+		"/home/daemos/repos/test/src/skins/admin/en/form_field/select_country.js",
+		"/home/daemos/repos/test/src/skins/default/en/modules/XC/FastLaneCheckout/blocks/address_form/billing/address_form.js",
+		"/home/daemos/repos/test/src/skins/common/js/common.js",
+		"/home/daemos/repos/test/src/classes/XLite/Module/XC/CrispWhiteSkin/View/CartCoupons.php",
+		"/home/daemos/repos/test/src/skins/crisp_white/customer/en/modules/CDev/Coupons/cart_coupons.css",
+		"/home/daemos/repos/test/src/skins/default/en/modules/XC/FastLaneCheckout/blocks/address_form/billing/same.twig",
+		"/home/daemos/repos/test/src/skins/default/en/shopping_cart/checkout_buttons.twig",
+		"/home/daemos/repos/test/src/skins/default/en/shopping_cart/parts/total.button.twig",
+		"/home/daemos/repos/test/src/skins/crisp_white/customer/en/modules/XC/FastLaneCheckout/sections/style.less",
+		"/home/daemos/repos/test/src/skins/default/en/button/buttons_separator.twig",
+		"/home/daemos/repos/test/src/skins/crisp_white/customer/en/css/less/cart.less",
+		"/home/daemos/repos/test/src/skins/default/en/modules/XC/FastLaneCheckout/sections/address/details/order_details.twig",
+		"/home/daemos/repos/test/src/skins/default/en/modules/XC/FastLaneCheckout/sections/payment/details/shipping_details.twig",
+		"/home/daemos/repos/test/src/skins/default/en/modules/XC/FastLaneCheckout/sections/payment/component.js",
+		"/home/daemos/repos/test/src/skins/default/en/modules/XC/FastLaneCheckout/blocks/shipping_details/style.less",
+		"/home/daemos/repos/test/src/classes/XLite/Controller/Customer/Checkout.php",
+		"/home/daemos/repos/test/src/skins/default/en/modules/XC/FastLaneCheckout/blocks/order_notes/order-notes.js",
+		"/home/daemos/repos/test/src/skins/default/en/modules/XC/FastLaneCheckout/checkout_fastlane/store_modules/order.js",
+		"/home/daemos/repos/test/src/skins/default/en/modules/XC/FastLaneCheckout/blocks/shipping_details/shipping-details.js",
+		"/home/daemos/repos/test/src/skins/default/en/modules/XC/FastLaneCheckout/blocks/shipping_methods/selector.twig",
+		"/home/daemos/repos/test/src/classes/XLite/Module/XC/FastLaneCheckout/View/Blocks/ShippingMethods.php",
+		"/home/daemos/repos/test/src/classes/XLite/View/CommonResources.php",
+		"/home/daemos/repos/test/src/classes/XLite/Module/XC/FastLaneCheckout/View/Blocks/OrderNotes.php",
+		"/home/daemos/repos/test/src/classes/XLite/Module/XC/FastLaneCheckout/View/Blocks/ShippingDetails.php",
+		"/home/daemos/repos/test/src/classes/XLite/Model/Cart.php",
+		"/home/daemos/repos/test/src/classes/XLite/Model/Order.php",
+		"/home/daemos/repos/test/src/skins/default/en/modules/XC/FastLaneCheckout/blocks/shipping_details/template.twig",
+		"/home/daemos/repos/test/src/classes/XLite/View/Button/ButtonsSeparator.php",
+		"/home/daemos/repos/test/src/skins/crisp_white/customer/en/css/less/checkout.less",
+		"/home/daemos/repos/test/src/skins/crisp_white/customer/en/css/less/module-fixes.less",
+		"/home/daemos/repos/test/src/var/run/classes/XLite/Module/CDev/Coupons/View/CartCoupons.php",
+		"/home/daemos/repos/test/src/var/run/classes/XLite/Module/CDev/Coupons/View/CartCoupons.php.decorators",
+		"/home/daemos/repos/test/src/skins/default/en/modules/CDev/Coupons/cart_coupons.css",
+		"/home/daemos/repos/test/src/skins/crisp_white/customer/en/css/less/grid.less",
+		"/home/daemos/repos/test/src/skins/default/en/checkout/steps/shipping/parts/address.js",
+		"/home/daemos/repos/test/src/classes/XLite/Module/CDev/Coupons/View/CartCoupons.php",
+		"/home/daemos/repos/test/src/var/run/classes/XLite/Module/XC/CrispWhiteSkin/View/CartCoupons.php",
+		"/home/daemos/repos/test/src/var/run/classes/XLite/View/AView.php",
+		"/home/daemos/repos/test/src/var/run/classes/XLite/Module/CDev/Coupons/View/CartCouponsAbstract.php",
+		"/home/daemos/repos/test/src/var/log/php_errors.log.2016-05-28.php",
+		"/home/daemos/repos/test/src/classes/XLite/View/Signin.php",
+		"/home/daemos/repos/test/src/classes/XLite/Module/XC/CrispWhiteSkin/View/Model/Profile/Main.php",
+		"/home/daemos/repos/test/src/classes/XLite/View/Button/PopupLoginLink.php",
+		"/home/daemos/repos/test/src/classes/XLite/View/Button/PopupLogin.php",
+		"/home/daemos/repos/test/src/skins/default/en/modules/CDev/Coupons/cart_coupons.twig",
+		"/home/daemos/repos/test/src/skins/default/en/layout/header/header.bar.links.newby.login.twig",
+		"/home/daemos/repos/test/src/classes/XLite/View/LoginLink.php",
+		"/home/daemos/repos/test/src/skins/default/en/js/login.js",
+		"/home/daemos/repos/test/src/skins/default/en/button/js/login.js",
+		"/home/daemos/repos/test/src/skins/default/en/checkout/steps/shipping/parts/address.create.twig",
+		"/home/daemos/repos/test/src/sql/xlite_data_lng.yaml",
+		"/home/daemos/repos/test/src/skins/default/en/modules/CDev/SimpleCMS/primary_menu_items.twig",
+		"/home/daemos/repos/test/src/classes/XLite/Module/CDev/SimpleCMS/View/Menu/Customer/Top.php",
+		"/home/daemos/repos/test/src/classes/XLite/View/Menu/Customer/Top.php",
+		"/home/daemos/repos/test/src/skins/default/en/layout/header/main_menu_items.twig",
+		"/home/daemos/repos/test/src/classes/XLite/Module/XC/CrispWhiteSkin/Main.php",
+		"/home/daemos/repos/test/src/skins/crisp_white/customer/en/top_message/style.less",
+		"/home/daemos/repos/test/src/skins/default/en/checkout/steps/shipping/parts/address.shipping.js",
+		"/home/daemos/repos/test/src/skins/common/js/core.form.js",
+		"/home/daemos/repos/test/src/skins/default/en/layout/slidebar.twig",
+		"/home/daemos/repos/test/src/skins/crisp_white/customer/en/modules/XC/Reviews/average_rating/style.css",
+		"/home/daemos/repos/test/src/skins/default/files.txt",
+		"/home/daemos/repos/test/src/skins/default/en/js/slidebar.js",
+		"/home/daemos/repos/test/src/skins/crisp_white/customer/en/css/less/xc_productfilter.less",
+		"/home/daemos/repos/test/src/skins/crisp_white/customer/en/css/less/buttons.less",
+		"/home/daemos/repos/test/src/skins/default/en/css/less/grid.less",
+		"/home/daemos/repos/test/src/classes/XLite/Module/XC/FastLaneCheckout/View/Blocks/AddressForm.php",
+		"/home/daemos/repos/test/src/skins/default/en/modules/XC/FastLaneCheckout/blocks/address_form/template.twig",
+		"/home/daemos/repos/test/src/skins/default/en/modules/XC/FastLaneCheckout/sections/address/billing.twig",
+		"/home/daemos/repos/test/src/skins/default/en/modules/XC/FastLaneCheckout/sections/address/shipping.twig",
+		"/home/daemos/repos/test/src/classes/XLite/Module/XC/FastLaneCheckout/View/Sections/Address.php",
+		"/home/daemos/repos/test/src/classes/XLite/Module/XC/CrispWhiteSkin/View/Sections/Address.php",
+		"/home/daemos/repos/test/src/skins/crisp_white/customer/en/css/less/iconfont.less",
+		"/home/daemos/repos/test/src/skins/default/en/modules/XC/ProductFilter/sidebar/attributes.twig",
+		"/home/daemos/repos/test/src/skins/default/en/modules/XC/ProductFilter/sidebar/script.js",
+		"/home/daemos/repos/test/src/skins/default/en/modules/XC/ProductFilter/sidebar/style.css",
+		"/home/daemos/repos/test/src/skins/crisp_white/customer/en/modules/XC/ProductFilter/filters_mobile.twig",
+		"/home/daemos/repos/test/src/skins/crisp_white/customer/en/css/less/mobile-header.less",
+		"/home/daemos/repos/test/src/skins/crisp_white/customer/en/css/less/header.less",
+		"/home/daemos/repos/test/src/classes/XLite/Module/XC/CrispWhiteSkin/View/LanguageSelector/LocaleIndicator.php",
+		"/home/daemos/repos/test/src/classes/XLite/Module/XC/CrispWhiteSkin/View/LanguageSelector/Wrapper.php",
+		"/home/daemos/repos/test/src/skins/crisp_white/customer/en/layout/header/header.bar.locale.twig",
+		"/home/daemos/repos/test/src/skins/crisp_white/customer/en/layout/header/locale_menu/language.twig",
+		"/home/daemos/repos/test/src/skins/crisp_white/customer/en/css/elements.less",
+		"/home/daemos/repos/test/src/skins/crisp_white/customer/en/css/less/elements.less",
+		"/home/daemos/repos/test/src/skins/default/en/modules/XC/ProductFilter/form_field/value_range/style.css"
+	],
+	"find":
+	{
+		"height": 46.0
+	},
+	"find_in_files":
+	{
+		"height": 132.0,
+		"where_history":
+		[
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/, -**/*.min.css, -**/*.pack.js, -**/stylus.js, -**/*.min.js",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/, -**/*.min.css, -**/*.pack.js, -**/stylus.js, -**/*.min.js, *.js",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/, -**/*.min.css, -**/*.pack.js, -**/stylus.js, -**/*.min.js",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/, -**/*.min.css, -**/*.pack.js, -**/stylus.js, -**/*.min.js, src/skins/crisp_white/**/*.css , src/skins/crisp_white/**/*.less",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/, -**/*.min.css, -**/*.pack.js, -**/stylus.js, -**/*.min.js, src/skins/crisp_white/",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/, -**/*.min.css, -**/*.pack.js, -**/stylus.js, -**/*.min.js",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/, -**/*.min.css, -**/*.pack.js, -**/stylus.js, -**/*.min.js, *.js",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/, -**/*.min.css, -**/*.pack.js, -**/stylus.js, -**/*.min.js",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/, -**/*.min.css, -**/*.pack.js, -**/stylus.js, -**/*.min.js, *.css",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/, -**/*.min.css, -**/*.pack.js, -**/stylus.js, -**/*.min.js. *.css",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/, -**/*.min.css, -**/*.pack.js, -**/stylus.js, -**/*.min.js",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/, -**/*.min.css, -**/*.pack.js, -**/stylus.js, -**/*.min.js, *.css",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/, -**/*.min.css, -**/*.pack.js, -**/stylus.js, -**/*.min.js, *.less",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/, -**/*.min.css, -**/*.pack.js, -**/stylus.js, -**/*.min.js",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/, -**/*.min.css, -**/*.pack.js, -**/stylus.js, -**/*.min.js, src/skins/crisp_white/**/*.js",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/, -**/*.min.css, -**/*.pack.js, -**/stylus.js, -**/*.min.js, src/skins/crisp_white/**/*.less",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/, -**/*.min.css, -**/*.pack.js, -**/stylus.js, -**/*.min.js, src/skins/crisp_white/",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/, -**/*.min.css, -**/*.pack.js, -**/stylus.js, -**/*.min.js,",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/, -**/*.min.css, -**/*.pack.js, -**/stylus.js, -**/*.min.js, *.js",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/, -**/*.min.css, -**/*.pack.js, -**/stylus.js, -**/*.min.js",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/, -**/*.min.css, -**/*.pack.js, -**/stylus.js, -**/*.min.js, *.js",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/, -**/*.min.css, -**/*.pack.js, -**/stylus.js, -**/*.min.js",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/, -**/*.min.css, -**/*.pack.js, -**/stylus.js, -**/*.min.js, *.less, *.css",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/, -**/*.min.css, -**/*.pack.js, -**/stylus.js, -**/*.min.js",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/, -**/*.min.css, -**/*.pack.js, -**/stylus.js, -**/*.min.js, *.php",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/, -**/*.min.css, -**/*.pack.js, -**/stylus.js, -**/*.min.js, *.js",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/, -**/*.min.css, -**/*.pack.js, -**/stylus.js, -**/*.min.js",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/, -**/*.min.css, -**/*.pack.js, -**/stylus.js",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/, -**/*.min.css, -**/*.pack.js, -**/codemirror/",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/, -**/*.min.css, -**/*.pack.js",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/, -**/*.min.css, - **/*.pack.js",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/, -src/skins/common/**/*.min.css",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/,",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/, *.js",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/, *.less",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/, *.css",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/",
+			"/home/daemos/repos/test/src/skins/default/en/items_list/product/parts/common.cart-tray.twig",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/",
+			"/home/daemos/repos/test/src/skins/crisp_white/customer/en/layout/header/locale_menu",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/, *.less",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/, *.css",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/, *.less",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var/",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, -src/var",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/\\",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, src/skins/skin2016",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, *.less",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, *.js",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, *.twig",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, src/skins/skin2016",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/, *.twig",
+			"-.dev/,  -src/var/run/, -src/var/resources/, -src/var/datacache/",
+			"-.dev/,  -src/var/run/",
+			"-.dev/,  -src/var/run/, src/skins/skin2016",
+			"-.dev/,  -src/var/run/",
+			"/home/daemos/repos/test/src/skins/skin2016/customer/en/css/less/vertical-tabs.less",
+			"-.dev/,  -src/var/run/",
+			"-.dev/,  -src/var/run/, *.css",
+			"-.dev/,  -src/var/run/",
+			"-.dev/,  -src/var/run/, src/skins/skin2016",
+			"-.dev/,  -src/var/run/, *.php",
+			"-.dev/,  -src/var/run/, .php",
+			"-.dev/,  -src/var/run/",
+			"-.dev/,  -src/var/run/, *.tpl",
+			"-.dev/,  -src/var/run/",
+			"-.dev/,  -src/var/run/, *.tpl",
+			"-.dev/,  -src/var/run/",
+			"-.dev/,  -src/var/run/ , src/classes",
+			"-.dev/,  -src/var/run/",
+			"/home/daemos/repos/test/src/skins/default/en/modules/XC/ThemeTweaker/inline_editable",
+			"-.dev/,  -src/var/run/",
+			"-.dev/, *.tpl, -src/var/run/",
+			"-.dev/, *.php, -src/var/run/",
+			"-.dev/, *.php",
+			"-.dev/, *.js",
+			"-.dev/",
+			"-.dev/, *.php",
+			"-.dev/, *.js",
+			"-.dev/",
+			"-.dev/, *.js",
+			"-.dev/",
+			"-.dev/, *.js",
+			"-.dev/, *.css",
+			"-.dev/",
+			"-.dev/, *.php",
+			"-.dev/",
+			"-.dev/, *.js",
+			"-.dev/",
+			"-.dev/,*.js",
+			"-.dev/",
+			"-.dev/, *.js",
+			"-.dev/",
+			"-.dev/, *.js",
+			"-.dev/",
+			"",
+			"-.dev/, -src/var/datacache",
+			"-.dev/, -src/var/datacache, src/skins/pdf/en/order/",
+			"-.dev/, -src/var/datacache",
+			"-.dev/, -src/var/datacache, *.yaml",
+			"-.dev/, -src/var/datacache",
+			"-.dev/, -src/var/datacache/, *.yaml",
+			"-.dev/, -src/var/datacache/",
+			"-.dev/, -src/var/datacache/, *.tpl",
+			"-.dev/, -src/var/datacache/, .tpl",
+			"-.dev/, -src/var/datacache/",
+			"-.dev/, -src/var/datacache/, src/skins/mail",
+			"-.dev/, -src/var/datacache/,",
+			"-.dev/, -src/var/datacache/, *.php",
+			"-.dev/, -src/var/datacache/, *.css",
+			"-.dev/, -src/var/datacache/",
+			"-.dev/, -src/var/datacache/, *.js",
+			"-.dev/, -src/var/datacache/",
+			"-.dev/, -src/var/datacache/, *.tpl",
+			"-.dev/, -src/var/datacache/",
+			"-.dev/, -src/var/datacache/, *.yaml",
+			"-.dev/, -src/var/datacache/",
+			"-.dev/, -src/var/datacache/, src/classes/XLite/Module/XC/AvaTax/, src/skins/default/en/modules/XC/Reviews/, src/skins/admin/en/modules/XC/Reviews/",
+			"-.dev/, -src/var/datacache/, src/classes/XLite/Module/XC/Reviews/, src/skins/default/en/modules/XC/Reviews/, src/skins/admin/en/modules/XC/Reviews/"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"deferred",
+			"shippingmethodslist.twig",
+			"shipping-methods",
+			"layout edito",
+			"o rearrange them.",
+			"isChecked",
+			"checkSavedValue",
+			".onoffswitch",
+			".onoffswitch .onoffswitch-switch",
+			"onoffswitch-inner",
+			"no_minify",
+			"reloading",
+			"width: 345px;",
+			".lc-minicart .items-list",
+			"hardRedirect",
+			"attribute-values",
+			"ShippingMethodsList",
+			"shippingMethodsList",
+			"order-success-panel",
+			"order-success-box",
+			"UpdateStatesList",
+			"checkout_fastlane_address_edit_link",
+			"vue.min",
+			"getShippingMethodName",
+			"ordernotes",
+			"setOrderNotes",
+			"isCartTotalsBlock",
+			"buttons-separator",
+			"cart_coupons.twig",
+			"log-in",
+			"LoginLink",
+			"login.js",
+			"log-in",
+			"log",
+			"loginExists",
+			"login",
+			"There is already an account with your email address",
+			"he email you provided is already in us",
+			"top-main-menu",
+			"header.menu",
+			"processReadiness",
+			"validate",
+			"controlReadiness",
+			"processReadiness",
+			"isReadinessChanged",
+			"validate",
+			"triggerStateEvents",
+			"state-changed",
+			"validate",
+			"changeHandler",
+			"triggerStateEvents",
+			"eug",
+			"png",
+			"url\\(",
+			"btnShowRating",
+			"transition",
+			"filter-attribute",
+			"collapsed",
+			"collapsible",
+			".ui-slider-handle",
+			".ui-slider-range",
+			".top-main-menu",
+			"width: 250px",
+			".top-main-menu",
+			"drag",
+			"add-to-cart",
+			"media",
+			"collapse",
+			"header_search-panel",
+			".flex-container",
+			"itemsList.product.grid.customer.header",
+			"product-filter-placeholder",
+			"status-messages-wrapper",
+			"borde",
+			"showError",
+			"dis",
+			"disa",
+			"product-marks",
+			"block-block",
+			"account-link-orders",
+			"account-link-profile",
+			"messages-count",
+			"-webkit-input-placeholder",
+			"language-indicator",
+			"breadcrumb",
+			"contact-site-form",
+			"ready",
+			"profile-form",
+			"header_bar-locale dropdown",
+			".product-marks",
+			"scrollTop",
+			"target",
+			"affix",
+			"SubSubheading",
+			"defaul",
+			"toolshel",
+			"toolshelf",
+			"default",
+			"ToolShelf",
+			"subS",
+			"TEXT",
+			"_tagNames",
+			"STATIC",
+			"_preventEmptyRegions",
+			"_allowEmptyRegions",
+			"group",
+			"tooltip",
+			"cc-form",
+			"context",
+			"checkout.common.nonready",
+			"checkout.common.ready",
+			"AJAX-Location",
+			"TEMPLATE_SIDEBAR",
+			"LayoutBlockInterface",
+			"#f29221",
+			"#1C9AE8",
+			".wait-block",
+			"customer_presentation",
+			"Customer Zone settings",
+			"Customer Zone settings\n\n",
+			"radi",
+			"radio",
+			"placeholde",
+			"category-banner",
+			"locale_language-selector",
+			"getActiveLanguages",
+			".tabs-top",
+			"item-remove"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Sub3heading",
+			"#808080",
+			"#25c5df",
+			"@font-size-small",
+			"",
+			"10px",
+			"CrispWhiteSkin",
+			"0.5em",
+			".justify-content($1);",
+			".flex-wrap($1);",
+			".align-self($1);",
+			" .flex-display();",
+			" .flex-order($1);",
+			".align-items($1);",
+			".align-items(1);",
+			".align-items($1);",
+			".flex-display();",
+			"@rhythmic-unit",
+			"INTERFACE_CUSTOMER]",
+			"[",
+			"@rhythmic-unit",
+			"InlineEditableController",
+			"this.base",
+			"$this->getWidgetType()",
+			"LayoutBlockWidget",
+			"innerCommonWebPath",
+			"innerCommonFsPath",
+			"innerInterface",
+			"",
+			".flyout-menu",
+			"",
+			"demostore",
+			"\\XLite\\View\\FormField\\Inline\\AInline::PARAM_VIEW_TIP",
+			"\\XLite\\View\\FormField\\Inline\\AInline::PARAM_VIEW_ONLY",
+			"\\XLite\\View\\FormField\\Inline\\AInline::PARAM_FIELD_NAME",
+			"\\XLite\\View\\FormField\\Inline\\AInline::PARAM_ENTITY",
+			"\\XLite\\View\\FormField\\Inline\\AInline::PARAM_FIELD_NAMESPACE",
+			"\\XLite\\View\\FormField\\Inline\\AInline::FIELD_NAME",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "ClassifierModule/classifier.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2372,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1797,
+								1797
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 552.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "ClusteringModule/time_series.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1703,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								852,
+								852
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 162.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "template.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6688,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4837,
+								4837
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1404.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "output/res/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 182,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								182,
+								182
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "LingvoAnalysisModule/lingvo.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3952,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3069,
+								3069
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1044.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "start.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 731,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								586,
+								586
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 122.0
+	},
+	"output.xdebug":
+	{
+		"height": 24.0
+	},
+	"pinned_build_system": "",
+	"project": "lingvo-analysis.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"core.js",
+				"src/skins/common/js/core.js"
+			],
+			[
+				"panel_con",
+				"src/skins/default/en/modules/XC/ThemeTweaker/layout_editor/panel_controller.js"
+			],
+			[
+				"payment-me",
+				"src/skins/default/en/modules/XC/FastLaneCheckout/blocks/payment_methods/payment-methods.js"
+			],
+			[
+				"checkout/compon",
+				"src/skins/default/en/modules/XC/FastLaneCheckout/checkout_fastlane/component.js"
+			],
+			[
+				"place-order",
+				"src/skins/default/en/modules/XC/FastLaneCheckout/sections/payment/place-order.js"
+			],
+			[
+				"php_erro",
+				"src/var/log/php_errors.log.2016-06-02.php"
+			],
+			[
+				"shippingmethod/selec",
+				"src/classes/XLite/Module/XC/FastLaneCheckout/View/Blocks/ShippingMethods/Selector.php"
+			],
+			[
+				"shipping_methods/te",
+				"src/skins/default/en/modules/XC/FastLaneCheckout/blocks/shipping_methods/template.twig"
+			],
+			[
+				"shippingmethods",
+				"src/classes/XLite/Module/XC/FastLaneCheckout/View/Blocks/ShippingMethods.php"
+			],
+			[
+				"shippinglist.twig",
+				"src/skins/default/en/form_field/shipping_list.twig"
+			],
+			[
+				"shippingmethodslist.wi",
+				"src/skins/admin/en/shipping/add_method/parts/online_carrier_list.twig"
+			],
+			[
+				"vue.loa",
+				"src/skins/common/vue/vue.loadable.js"
+			],
+			[
+				"section/sections",
+				"src/skins/default/en/modules/XC/FastLaneCheckout/sections/section.js"
+			],
+			[
+				"vue.loadable",
+				"src/skins/common/vue/vue.loadable.js"
+			],
+			[
+				"shipping-me",
+				"src/skins/default/en/modules/XC/FastLaneCheckout/blocks/shipping_methods/shipping-methods.js"
+			],
+			[
+				"rutranslation/inst",
+				"src/classes/XLite/Module/CDev/RuTranslation/install.yaml"
+			],
+			[
+				"php_error",
+				"src/var/log/php_errors.log.2016-06-02.php"
+			],
+			[
+				"panel_controll",
+				"src/skins/default/en/modules/XC/ThemeTweaker/layout_editor/panel_controller.js"
+			],
+			[
+				"crisp_white/forms.ls",
+				"src/skins/crisp_white/customer/en/css/less/forms.less"
+			],
+			[
+				"forms.less",
+				"src/skins/default/en/css/less/forms.less"
+			],
+			[
+				"onoff",
+				"src/classes/XLite/View/FormField/Input/Checkbox/OnOff.php"
+			],
+			[
+				"php_er",
+				"src/var/log/php_errors.log.2016-06-02.php"
+			],
+			[
+				"disable_b",
+				"src/skins/default/en/modules/XC/ThemeTweaker/layout_editor/panel_parts/disable_button.twig"
+			],
+			[
+				"input/che",
+				"src/classes/XLite/View/FormField/Input/Checkbox.php"
+			],
+			[
+				"onof",
+				"src/classes/XLite/View/FormField/Input/Checkbox/OnOff.php"
+			],
+			[
+				"on_off",
+				"src/skins/admin/en/form_field/input/checkbox/on_off.twig"
+			],
+			[
+				"view/onoff",
+				"src/var/run/classes/XLite/View/FormField/Input/Checkbox/OnOffWithoutOffLabel.php"
+			],
+			[
+				"layouteditor/d",
+				"src/skins/default/en/modules/XC/ThemeTweaker/layout_editor/panel_parts/disable_button.twig"
+			],
+			[
+				"php_errors",
+				"src/var/log/php_errors.log.2016-06-02.php"
+			],
+			[
+				"checkoutapp",
+				"src/classes/XLite/Module/XC/FastLaneCheckout/View/CheckoutApp.php"
+			],
+			[
+				"fastlane",
+				"src/classes/XLite/Module/XC/FastLaneCheckout/View/CheckoutFastlane.php"
+			],
+			[
+				"sections/section",
+				"src/skins/default/en/modules/XC/FastLaneCheckout/sections/section.js"
+			],
+			[
+				"payment-m",
+				"src/skins/default/en/modules/XC/FastLaneCheckout/blocks/payment_methods/payment-methods.js"
+			],
+			[
+				"loadable.",
+				"src/skins/common/vue/vue.loadable.js"
+			],
+			[
+				"store.js",
+				"src/skins/default/en/modules/XC/FastLaneCheckout/checkout_fastlane/store.js"
+			],
+			[
+				"place-or",
+				"src/skins/default/en/modules/XC/FastLaneCheckout/sections/payment/place-order.js"
+			],
+			[
+				"shippingmethodslist",
+				"src/skins/default/en/checkout/steps/shipping/parts/shippingMethodsList.twig"
+			],
+			[
+				"controller/a",
+				"src/classes/XLite/Controller/AController.php"
+			],
+			[
+				"controller/profile",
+				"src/classes/XLite/Controller/Customer/Profile.php"
+			],
+			[
+				"forms.les",
+				"src/skins/crisp_white/customer/en/css/less/forms.less"
+			],
+			[
+				"bootstrap-c",
+				"src/skins/crisp_white/customer/en/css/bootstrap-changes.less"
+			],
+			[
+				"attribute_value",
+				"src/skins/default/en/product/attribute_value/select/body.twig"
+			],
+			[
+				"xlite/view/product/attributevalue/customer/acustomer",
+				"src/classes/XLite/View/Product/AttributeValue/Customer/ACustomer.php"
+			],
+			[
+				"view/product/attributevalue/",
+				"src/classes/XLite/View/Product/AttributeValue/Customer/Select.php"
+			],
+			[
+				"model/attri",
+				"src/classes/XLite/Model/Attribute.php"
+			],
+			[
+				"crisp_white/shipping/st",
+				"src/skins/crisp_white/customer/en/modules/XC/FastLaneCheckout/blocks/shipping_methods/style.less"
+			],
+			[
+				"shipping_method/style",
+				"src/skins/crisp_white/customer/en/modules/XC/FastLaneCheckout/blocks/shipping_methods/style.less"
+			],
+			[
+				"crisp_white/payment",
+				"src/skins/crisp_white/customer/en/modules/XC/FastLaneCheckout/blocks/payment_methods/style.less"
+			],
+			[
+				"crisp_white/sections_na",
+				"src/skins/crisp_white/customer/en/modules/XC/FastLaneCheckout/sections_navigation/style.less"
+			],
+			[
+				"sections_nav",
+				"src/skins/crisp_white/customer/en/modules/XC/FastLaneCheckout/sections_navigation/template.twig"
+			],
+			[
+				"view/shipp",
+				"src/classes/XLite/View/ShippingList.php"
+			],
+			[
+				"shippingmethodslist.twig",
+				"src/skins/default/en/checkout/steps/shipping/parts/shippingMethodsList.twig"
+			],
+			[
+				"crisp_white/naviga",
+				"src/skins/crisp_white/customer/en/modules/XC/FastLaneCheckout/sections_navigation/style.less"
+			],
+			[
+				"crisp_white/blocks/ca",
+				"src/skins/crisp_white/customer/en/modules/XC/FastLaneCheckout/blocks/cart_items/style.less"
+			],
+			[
+				"billing.js",
+				"src/skins/default/en/modules/XC/FastLaneCheckout/blocks/address_form/billing/address_form.js"
+			],
+			[
+				"crisp_white/fastlane/",
+				"src/skins/crisp_white/customer/en/modules/XC/FastLaneCheckout/blocks/address_form/style.less"
+			],
+			[
+				"cart_cou",
+				"src/skins/crisp_white/customer/en/modules/CDev/Coupons/cart_coupons.css"
+			],
+			[
+				"checkoutap",
+				"src/classes/XLite/Module/XC/FastLaneCheckout/View/CheckoutApp.php"
+			],
+			[
+				"common",
+				"src/classes/XLite/View/CommonResources.php"
+			],
+			[
+				"shippingmethods/se",
+				"src/classes/XLite/Module/XC/FastLaneCheckout/View/Blocks/ShippingMethods/Selector.php"
+			],
+			[
+				"php_err",
+				"src/var/log/php_errors.log.2016-05-30.php"
+			],
+			[
+				"commonre",
+				"src/classes/XLite/View/CommonResources.php"
+			],
+			[
+				"model/ord",
+				"src/classes/XLite/Model/Order.php"
+			],
+			[
+				"model/cart",
+				"src/classes/XLite/Model/Cart.php"
+			],
+			[
+				"shippingd",
+				"src/classes/XLite/Module/XC/FastLaneCheckout/View/Blocks/ShippingDetails.php"
+			],
+			[
+				"controller/c",
+				"src/classes/XLite/Controller/Customer/Checkout.php"
+			],
+			[
+				"controller/customer/che",
+				"src/classes/XLite/Controller/Customer/Checkout.php"
+			],
+			[
+				"ordernotes.",
+				"src/classes/XLite/Module/XC/FastLaneCheckout/View/Blocks/OrderNotes.php"
+			],
+			[
+				"fastlanecheckout/order_",
+				"src/skins/default/en/modules/XC/FastLaneCheckout/sections/address/details/order_details.twig"
+			],
+			[
+				"cart.less",
+				"src/skins/crisp_white/customer/en/css/less/cart.less"
+			],
+			[
+				"buttons",
+				"src/classes/XLite/View/Button/ButtonsSeparator.php"
+			],
+			[
+				"buttons_sep",
+				"src/skins/default/en/button/buttons_separator.twig"
+			],
+			[
+				"shopping_cart/butt",
+				"src/skins/default/en/shopping_cart/checkout_buttons.twig"
+			],
+			[
+				"crisp_white/style.css",
+				"src/skins/crisp_white/customer/en/css/style.css"
+			],
+			[
+				"checkout.less",
+				"src/skins/crisp_white/customer/en/css/less/checkout.less"
+			],
+			[
+				"cart_coupon",
+				"src/skins/crisp_white/customer/en/modules/CDev/Coupons/cart_coupons.css"
+			],
+			[
+				"runcartcou",
+				"src/var/run/classes/XLite/Module/CDev/Coupons/View/CartCoupons.php"
+			],
+			[
+				"cartcoupon",
+				"src/classes/XLite/Module/XC/CrispWhiteSkin/View/CartCoupons.php"
+			],
+			[
+				"cartcoupons.",
+				"src/var/run/classes/XLite/Module/CDev/Coupons/View/CartCoupons.php.decorators"
+			],
+			[
+				"xlite/module/xc/crispwhiteskin/view/cartcoupons",
+				"src/classes/XLite/Module/XC/CrispWhiteSkin/View/CartCoupons.php"
+			],
+			[
+				"aview",
+				"src/var/run/classes/XLite/View/AView.php"
+			],
+			[
+				"xlite/module/cdev/coupons/view/cartcouponsabstract",
+				"src/var/run/classes/XLite/Module/CDev/Coupons/View/CartCouponsAbstract.php"
+			],
+			[
+				"xlite/module/cdev/coupons/view/cartcoupons",
+				"src/classes/XLite/Module/CDev/Coupons/View/CartCoupons.php"
+			],
+			[
+				"view/cartco",
+				"src/var/run/classes/XLite/Module/CDev/Coupons/View/CartCoupons.php"
+			],
+			[
+				"coupons/",
+				"src/skins/default/en/modules/CDev/Coupons/cart_coupons.twig"
+			],
+			[
+				"cart_c",
+				"src/skins/crisp_white/customer/en/modules/CDev/Coupons/cart_coupons.css"
+			],
+			[
+				"popuplogin",
+				"src/classes/XLite/View/Button/PopupLogin.php"
+			],
+			[
+				"login.js",
+				"src/skins/default/en/button/js/login.js"
+			],
+			[
+				"address.js",
+				"src/skins/default/en/checkout/steps/shipping/parts/address.js"
+			],
+			[
+				"slidebar.js",
+				"src/skins/default/en/js/slidebar.js"
+			],
+			[
+				"simplecms/top",
+				"src/classes/XLite/Module/CDev/SimpleCMS/View/Menu/Customer/Top.php"
+			],
+			[
+				"layout/header/main_menu_items.twig",
+				"src/skins/default/en/layout/header/main_menu_items.twig"
+			],
+			[
+				"slidebar.twig",
+				"src/skins/default/en/layout/slidebar.twig"
+			],
+			[
+				"core.form.js",
+				"src/skins/common/js/core.form.js"
+			],
+			[
+				"shipping.js",
+				"src/skins/default/en/checkout/steps/shipping/parts/address.shipping.js"
+			],
+			[
+				"top_message/st",
+				"src/skins/crisp_white/customer/en/top_message/style.less"
+			],
+			[
+				"crisp_white/styl",
+				"src/skins/crisp_white/customer/en/css/style.css"
+			],
+			[
+				"view/sections/ad",
+				"src/classes/XLite/Module/XC/FastLaneCheckout/View/Sections/Address.php"
+			],
+			[
+				"address_form/templ",
+				"src/skins/default/en/modules/XC/FastLaneCheckout/blocks/address_form/template.twig"
+			],
+			[
+				"fastlanecheckout/view/addressform",
+				"src/classes/XLite/Module/XC/FastLaneCheckout/View/Blocks/AddressForm.php"
+			],
+			[
+				"grid.les",
+				"src/skins/default/en/css/less/grid.less"
+			],
+			[
+				"grid.less",
+				"src/skins/crisp_white/customer/en/css/less/grid.less"
+			],
+			[
+				"button.less",
+				"src/skins/crisp_white/customer/en/css/less/buttons.less"
+			],
+			[
+				"bootstrap-ch",
+				"src/skins/crisp_white/customer/en/css/bootstrap-changes.less"
+			],
+			[
+				"productfilter/attribute.twi",
+				"src/skins/default/en/modules/XC/ProductFilter/sidebar/attributes.twig"
+			],
+			[
+				"iconfont.",
+				"src/skins/crisp_white/customer/en/css/less/iconfont.less"
+			],
+			[
+				"bootstrap-cha",
+				"src/skins/crisp_white/customer/en/css/bootstrap-changes.less"
+			],
+			[
+				"xc_pr",
+				"src/skins/crisp_white/customer/en/css/less/xc_productfilter.less"
+			],
+			[
+				"floating",
+				"src/skins/crisp_white/customer/en/js/jquery.floating-label.js"
+			],
+			[
+				"type.les",
+				"src/skins/crisp_white/customer/en/css/less/type.less"
+			],
+			[
+				"paypal/login",
+				"src/skins/default/en/modules/CDev/Paypal/login/button.twig"
+			],
+			[
+				"signin.less",
+				"src/skins/crisp_white/customer/en/css/less/signin.less"
+			],
+			[
+				"crisp_white/top",
+				"src/skins/crisp_white/customer/en/top_message/style.less"
+			],
+			[
+				"paypal_",
+				"src/skins/admin/en/modules/XC/MultiVendor/form_field/paypal_login.twig"
+			],
+			[
+				"crispwhite/ac",
+				"src/classes/XLite/Module/XC/CrispWhiteSkin/Controller/Customer/ACustomer.php"
+			],
+			[
+				"core/req",
+				"src/classes/XLite/Core/Request.php"
+			],
+			[
+				"dragndrop",
+				"src/skins/default/en/items_list/product/parts/common.drag-n-drop-handle.twig"
+			],
+			[
+				"layout/header/header.bar.locale.twig",
+				"src/skins/crisp_white/customer/en/layout/header/header.bar.locale.twig"
+			],
+			[
+				"wrapper",
+				"src/classes/XLite/Module/XC/CrispWhiteSkin/View/LanguageSelector/Wrapper.php"
+			],
+			[
+				"header.js",
+				"src/skins/crisp_white/customer/en/js/header.js"
+			],
+			[
+				"element",
+				"src/skins/crisp_white/customer/en/css/elements.less"
+			],
+			[
+				"component-an",
+				"src/skins/common/bootstrap/css/component-animations.less"
+			],
+			[
+				"mobile-he",
+				"src/skins/crisp_white/customer/en/css/less/mobile-header.less"
+			],
+			[
+				"var/run/filters",
+				"src/var/run/classes/XLite/Module/XC/CrispWhiteSkin/View/FiltersMobile.php"
+			],
+			[
+				"filtersmobile",
+				"src/classes/XLite/Module/XC/CrispWhiteSkin/View/FiltersMobile.php"
+			],
+			[
+				"footer.js",
+				"src/skins/crisp_white/customer/en/js/footer.js"
+			],
+			[
+				"crispwhiteskin/c",
+				"src/classes/XLite/Module/XC/CrispWhiteSkin/Core/Layout.php"
+			],
+			[
+				"shippingmethods.js",
+				"src/skins/default/en/checkout/steps/shipping/parts/shippingMethods.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 625.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/projects/test.sublime-project"
+			],
+			[
+				"ne",
+				"~/projects/xcart-next.sublime-project"
+			],
+			[
+				"ia",
+				"~/Applications/DataMining/iadip_app/iadip.sublime-project"
+			]
+		],
+		"width": 475.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"xdebug":
+		{
+			"hide_conflict": false
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 435.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
