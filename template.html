@@ -45,6 +45,10 @@
         <div class="block">{{ cluster_table }}</div>
 
         <br />
+        <h3>Метрики качества классификации</h3>
+        <div class="block">{{ cluster_scores }}</div>
+
+        <br />
         <h3>Исходные данные по объектам в графическом виде</h3>
         <div class="block" style="text-align: center;" >
             <img src="cluster_fig.png">
@@ -72,13 +76,15 @@
                             <p>Минимальное значение: <span class="label label-success">{{ cluster.stat_min }}</span></p>
                         </div>
 
-                        <!--<p><strong><span class="glyphicon glyphicon-time"></span> Темпоральная характеристика по типам тенденции</strong>:</p>-->
+                        <p><strong><span class="glyphicon glyphicon-time"></span> Темпоральная характеристика по типам тенденции</strong>:</p>
                         <!-- типы тенденции: рост,падение,стабильность -->
-                        <!--<div class="block">-->
-                            <!--<p>Типичная тенденция <span class="label label-success">тип тенденции</span> соответствует <span class="label label-success">наименование признака 1</span> и составляет <span class="label label-success">столько</span> процентов.</p>-->
-                            <!--<p>Нетипичная тенденция <span class="label label-success">тип тенденции</span> соответствует <span class="label label-success">наименование признака К</span> и составляет <span class="label label-success">столько</span> процентов.</p>-->
-                            <!--<p>Или тенденции в признаках распределены равномерно: Рост = «столько» процентов, Падение = «столько» процентов, Стабильность = «столько» процентов.</p>-->
-                        <!--</div>-->
+                        <div class="block">
+                            <p>Типичная тенденция - <span class="label label-success">{{ cluster.tendency_most }}</span> и составляет <span class="label label-success">{{ cluster.tendency_most_count }}</span> элементов.</p>
+                            {% if cluster.least_tendency %}
+                                <p>Нетипичная тенденция - <span class="label label-success">{{ cluster.tendency_least }}</span> и составляет <span class="label label-success">{{ cluster.tendency_least_count }}</span> элементов.</p>
+                            {% endif %}
+ <!--                            <p>Или тенденции в признаках распределены равномерно: Рост = «столько» процентов, Падение = «столько» процентов, Стабильность = «столько» процентов.</p> -->
+                        </div>
 
                         <!--<p><strong><span class="glyphicon glyphicon-map-marker"></span> Пространственное распределение в кластере:</strong></p>-->
                         <!--<div class="block">-->

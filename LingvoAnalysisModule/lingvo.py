@@ -11,13 +11,13 @@ time_series_clusters = None
 css_classes = ["table", "table-striped", "table-bordered", "table-hover", "table-condensed"]
 
 
-def entry_point(filename, clusters, classes, non_classified):
+def entry_point(filename, clusters, classes, non_classified, scores):
     read_file(filename)
-    result = start_analysis(clusters, classes, non_classified)
+    result = start_analysis(clusters, classes, non_classified,scores)
     render_result(**result.__dict__)
 
 
-def start_analysis(clusters, classes, non_classified):
+def start_analysis(clusters, classes, non_classified,scores):
     all_clusters_list = clusters.values.flatten().tolist()
     all_clusters_set = set(all_clusters_list)
     clusters_statistics = Counter(all_clusters_list)
@@ -25,6 +25,7 @@ def start_analysis(clusters, classes, non_classified):
     report = Report()
     report.raw_data_table = data_frame.to_html(classes=css_classes)
     report.cluster_table = clusters.to_html(classes=css_classes, header=False)
+    report.cluster_scores = scores.to_html(classes=css_classes, header=False)
     report.objects_count = len(data_frame.columns)
     report.objects_list = data_frame.columns
     report.spaces_names = set(data_frame.loc["Пространство"])
@@ -43,7 +44,8 @@ def start_analysis(clusters, classes, non_classified):
     for column, series in data_frame.iteritems():
         series = series.drop("Пространство")
         series = [int(x) for x in series.tolist()]
-        values_stat[i] = (int(max(series)), int(scipy.mean(series)), int(min(series)))
+        tendency = get_tendency(series)
+        values_stat[i] = (int(max(series)), int(scipy.mean(series)), int(min(series)), tendency)
         i += 1
 
     report.all_clusters = []
@@ -51,12 +53,13 @@ def start_analysis(clusters, classes, non_classified):
         cluster_freq = all_clusters_list.count(clusterId)
         percentage = cluster_freq * (len(all_clusters_list) + 2)
 
-        all_max, all_mid, all_min = [], [], []
+        all_max, all_mid, all_min, tendencies = [], [], [], []
         for index, cl in enumerate(clusters.values):
             if clusters.values[index][0] == clusterId:
                 all_max.append(values_stat[index][0])
                 all_mid.append(values_stat[index][1])
                 all_min.append(values_stat[index][2])
+                tendencies.append(values_stat[index][3])
 
         cluster = Cluster()
         cluster.id = str(clusterId)
@@ -64,11 +67,26 @@ def start_analysis(clusters, classes, non_classified):
         cluster.stat_max = int(max(all_max))
         cluster.stat_mid = int(scipy.mean(all_mid))
         cluster.stat_min = int(min(all_min))
+        tend_stats = Counter(tendencies)
+        cluster.tendency_most = tend_stats.most_common(1)[0][0]
+        cluster.tendency_most_count = tend_stats.most_common(1)[0][1]
+        if (len(tend_stats.most_common()) > 1):
+            cluster.least_tendency = True
+            cluster.tendency_least = tend_stats.most_common()[:-1-1:-1][0][0]
+            cluster.tendency_least_count = tend_stats.most_common()[:-1-1:-1][0][1]
 
         report.all_clusters.append(cluster)
 
     return report
 
+def get_tendency(series):
+    if abs(series[0] - series[-1]) > 10:
+        if series[0] > series[-1]:
+            return 'Падение'
+        else:
+            return 'Рост'
+    else:
+        return 'Стабильность'
 
 def read_file(filename):
     global data_frame
