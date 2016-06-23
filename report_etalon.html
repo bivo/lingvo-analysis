@@ -13,67 +13,101 @@
         <div class="page-header">
             <h1>Лингвистический отчет кластерного анализа «Big Data»</h1>
         </div>
-        <ul class="tab">
-            <li><a href="#" class="tablinks" onclick="openReport(event, 'temporal')">Темпоральная</a></li>
-            <li><a href="#" class="tablinks" onclick="openReport(event, 'geo')">Пространственная</a></li>
-        </ul>
-        <div id="temporal" class="tabcontent">
-            <h3>Общая характеристика кластеров</h3>
-            <div class="block">
-                <p>
-                    <strong>Общее количество</strong>
-                    исследуемых объектов:
-                    <span class="label label-success">
-                        9
-                    </span>.
-                </p>
 
-                <p>Список исследуемых объектов:
-                    
-                        <span class="label label-success">Apache Spark</span>
-                    
-                        <span class="label label-success">Storm</span>
-                    
-                        <span class="label label-success">Lucene</span>
-                    
-                        <span class="label label-success">Elasticsearch</span>
-                    
-                        <span class="label label-success">Apache Hadoop</span>
-                    
-                        <span class="label label-success">Apache Cassandra</span>
-                    
-                        <span class="label label-success">Redis</span>
-                    
-                        <span class="label label-success">MongoDB</span>
-                    
-                        <span class="label label-success">Apache Solr</span>
-                    .
-                </p>
+        <h3>Общая характеристика кластеров</h3>
+        <div class="block">
+            <p><strong>Общее количество</strong> исследуемых объектов: <span class="label label-success">9</span>.</p>
 
-                <p>Список исследуемых пространств объектов:
-                    
-                        <span class="label label-success">Система реального времени</span>
-                    
-                        <span class="label label-success">Полнотекстовый поиск</span>
-                    
-                        <span class="label label-success">Распределенная система</span>
-                    
-                        <span class="label label-success">noSQL</span>
-                    .
-                </p>
+            <p>Список исследуемых объектов:
+                
+                    <span class="label label-success">Apache Spark</span>
+                
+                    <span class="label label-success">Storm</span>
+                
+                    <span class="label label-success">Lucene</span>
+                
+                    <span class="label label-success">Elasticsearch</span>
+                
+                    <span class="label label-success">Apache Hadoop</span>
+                
+                    <span class="label label-success">Apache Cassandra</span>
+                
+                    <span class="label label-success">Redis</span>
+                
+                    <span class="label label-success">MongoDB</span>
+                
+                    <span class="label label-success">Apache Solr</span>
+                .
+            </p>
 
-                <p><strong>Объекты были сгруппированы</strong> в <span class="label label-success">4</span> кластера(-ов).</p>
+            <p>Список исследуемых пространств объектов:
+                
+                    <span class="label label-success">noSQL</span>
+                
+                    <span class="label label-success">Распределенная система</span>
+                
+                    <span class="label label-success">Система реального времени</span>
+                
+                    <span class="label label-success">Полнотекстовый поиск</span>
+                .
+            </p>
 
-                <p>Количество объектов изменять <span class="label label-success">можно</span>, количество кластеров изменять <span class="label label-danger">нельзя</span>.</p>
+            <p><strong>Объекты были сгруппированы</strong> в <span class="label label-success">4</span> кластера(-ов).</p>
 
-                <p><strong>Большинство</strong> объектов исследования сгруппированы в кластерах: <span class="label label-success">[0]</span>.</p>
+            <p>Количество объектов изменять <span class="label label-success">можно</span>, количество кластеров изменять <span class="label label-danger">нельзя</span>.</p>
 
-                <p><strong>Наименьшее количество</strong> объектов исследования сгруппированы в кластерах: <span class="label label-success">[2, 3]</span>.</p>
-                <!--<p>Или «объекты исследования» сгруппированы в кластеры <strong>равномерно</strong>. (нужно предварительно определить лингвистические оценки «Большинство», «Меньшинство», «Равномерно»).</p>-->
-            </div>
-            <br />
-            <h3>Метрики качества классификации</h3>
-            <div class="block"><table border="1" class="dataframe table table-striped table-bordered table-hover table-condensed">
+            <p><strong>Большинство</strong> объектов исследования сгруппированы в кластере <span class="label label-success">1</span>.</p>
+
+            <p><strong>Наименьшее количество</strong> объектов исследования сгруппированы в кластере <span class="label label-success">2</span>.</p>
+            <!--<p>Или «объекты исследования» сгруппированы в кластеры <strong>равномерно</strong>. (нужно предварительно определить лингвистические оценки «Большинство», «Меньшинство», «Равномерно»).</p>-->
+        </div>
+
+        <br />
+        <h3>Распределение объектов по кластерам</h3>
+        <div class="block"><table border="1" class="dataframe table table-striped table-bordered table-hover table-condensed">
+  <tbody>
+    <tr>
+      <th>Apache Spark</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>Storm</th>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>Lucene</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Elasticsearch</th>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>Apache Hadoop</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>Apache Cassandra</th>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>Redis</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>MongoDB</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>Apache Solr</th>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table></div>
+
+        <br />
+        <h3>Метрики качества классификации</h3>
+        <div class="block"><table border="1" class="dataframe table table-striped table-bordered table-hover table-condensed">
   <tbody>
     <tr>
       <th>Приведенный индекс Ранда</th>
@@ -94,318 +128,211 @@
   </tbody>
 </table></div>
 
-            <h3>Исходные данные по объектам в графическом виде</h3>
-            <div class="block" style="text-align: center;" >
-                <img src="cluster_fig.png">
-            </div>
-            <br />
+        <br />
+        <h3>Исходные данные по объектам в графическом виде</h3>
+        <div class="block" style="text-align: center;" >
+            <img src="cluster_fig.png">
+        </div>
 
-            <h3>Нечеткая шкала лингвистического резюмирования</h3>
-            <div class="block" style="font-style: italic;">
-                Описание (лингвистическая оценка, фактор изменения, комментарий):
-                <ul>
-                    <li class="text-danger"><strong>High fall (0 - 0.5) - падение более чем на 50%</strong></li>
-                    <li class="text-danger">Fall (0.5 - 0.99) - падение не более 50%</li>
-                    <li class="text-muted">Flat (1 - 2) - рост не более чем в 2 раза</li>
-                    <li class="text-success">Growth (2 - 10) - рост от 2 до 10 раз</li>
-                    <li class="text-success"><strong>High growth (10 - 40) - рост от 10 до 40 раз</strong></li>
-                </ul>
-            </div>
+        <br />
+        <h3>Характеристики каждого кластера</h3>
 
-            <div class="block" style="text-align: center;">
-                <img src="fuzzy_scale.png">
-            </div>
-            <br />
+        
 
-            <h3>Характеристики каждого кластера</h3>
-
-            
-
-                <div class="block">
-                    <div class="panel panel-success">
-                        <div class="panel-heading">
-                            <span class="label label-success">#ID: 0</span>
-                            <span style="display: inline-block; width: 70px;"></span>
-                            Содержит <span class="label label-success">44%</span> исследуемых объектов
-                        </div>
-                        <div class="panel-body">
-
-                            <p><strong><span class="glyphicon glyphicon-th-list"></span> Объекты вошедшие в кластер</strong></p>
-                            <div class="block">
-                                
-                                    <span class="label label-success">Apache Spark</span>
-                                
-                                    <span class="label label-success">Apache Hadoop</span>
-                                
-                                    <span class="label label-success">Redis</span>
-                                
-                                    <span class="label label-success">MongoDB</span>
-                                
-                            </div>
-                            <br />
-
-                            <p><strong><span class="glyphicon glyphicon-th-large"></span> Характеристика признаков внутри кластера</strong></p>
-                            <div class="block">
-                                <p><span class="label label-primary"></span></p>
-                                <p>Максимальное значение: <span class="label label-success">100</span></p>
-                                <p>Среднее значение: <span class="label label-success">20</span></p>
-                                <p>Минимальное значение: <span class="label label-success">0</span></p>
-                            </div>
-
-                            <p><strong><span class="glyphicon glyphicon-signal"></span> Лингвистическое резюмирование тенденции роста/падения</strong></p>
-                            <div class="block">
-                                <p>Фактор изменения тренда: <span class="label label-success">26.77</span></p>
-                                <p>Лингвистическая оценка:
-                                    <span class="label label-success">
-                                        <span class="glyphicon glyphicon-arrow-up"></span> High growth
-                                    </span>
-                                </p>
-                                <img src="fuzzy_0.png">
-                            </div>
-                            <br />
-
-                            <!--<p><strong><span class="glyphicon glyphicon-time"></span> Темпоральная характеристика по типам тенденции</strong>:</p>-->
-                            <!-- типы тенденции: рост,падение,стабильность -->
-                            <!--<div class="block">-->
-                                <!--<p>Типичная тенденция <span class="label label-success">тип тенденции</span> соответствует <span class="label label-success">наименование признака 1</span> и составляет <span class="label label-success">столько</span> процентов.</p>-->
-                                <!--<p>Нетипичная тенденция <span class="label label-success">тип тенденции</span> соответствует <span class="label label-success">наименование признака К</span> и составляет <span class="label label-success">столько</span> процентов.</p>-->
-                                <!--<p>Или тенденции в признаках распределены равномерно: Рост = «столько» процентов, Падение = «столько» процентов, Стабильность = «столько» процентов.</p>-->
-                            <!--</div>-->
-
-                            <!--<p><strong><span class="glyphicon glyphicon-map-marker"></span> Пространственное распределение в кластере:</strong></p>-->
-                            <!--<div class="block">-->
-                                <!--<p>Большинство объектов исследования относятся к <span class="label label-success">наименование географического места</span> (или другого пространства ), что составляет <span class="label label-success">столько-то процентов</span>.</p>-->
-                                <!--<p>Наименьшее количество объектов исследования относятся к <span class="label label-success">наименование географического места</span> (или другого пространства), что составляет <span class="label label-success">столько-то процентов</span>.</p>-->
-                                <!--<p>Или объекты исследования равномерно распределены в пространстве <span class="label label-success">наименование пространства</span>).</p>-->
-                            <!--</div>-->
-
-                        </div>
-                    </div>
-                </div>
-
-            
-
-                <div class="block">
-                    <div class="panel panel-success">
-                        <div class="panel-heading">
-                            <span class="label label-success">#ID: 1</span>
-                            <span style="display: inline-block; width: 70px;"></span>
-                            Содержит <span class="label label-success">33%</span> исследуемых объектов
-                        </div>
-                        <div class="panel-body">
-
-                            <p><strong><span class="glyphicon glyphicon-th-list"></span> Объекты вошедшие в кластер</strong></p>
-                            <div class="block">
-                                
-                                    <span class="label label-success">Storm</span>
-                                
-                                    <span class="label label-success">Apache Cassandra</span>
-                                
-                                    <span class="label label-success">Apache Solr</span>
-                                
-                            </div>
-                            <br />
-
-                            <p><strong><span class="glyphicon glyphicon-th-large"></span> Характеристика признаков внутри кластера</strong></p>
-                            <div class="block">
-                                <p><span class="label label-primary"></span></p>
-                                <p>Максимальное значение: <span class="label label-success">71</span></p>
-                                <p>Среднее значение: <span class="label label-success">16</span></p>
-                                <p>Минимальное значение: <span class="label label-success">0</span></p>
-                            </div>
-
-                            <p><strong><span class="glyphicon glyphicon-signal"></span> Лингвистическое резюмирование тенденции роста/падения</strong></p>
-                            <div class="block">
-                                <p>Фактор изменения тренда: <span class="label label-default">1.98</span></p>
-                                <p>Лингвистическая оценка:
-                                    <span class="label label-default">
-                                        <span class="glyphicon glyphicon-minus"></span> Flat
-                                    </span>
-                                </p>
-                                <img src="fuzzy_1.png">
-                            </div>
-                            <br />
-
-                            <!--<p><strong><span class="glyphicon glyphicon-time"></span> Темпоральная характеристика по типам тенденции</strong>:</p>-->
-                            <!-- типы тенденции: рост,падение,стабильность -->
-                            <!--<div class="block">-->
-                                <!--<p>Типичная тенденция <span class="label label-success">тип тенденции</span> соответствует <span class="label label-success">наименование признака 1</span> и составляет <span class="label label-success">столько</span> процентов.</p>-->
-                                <!--<p>Нетипичная тенденция <span class="label label-success">тип тенденции</span> соответствует <span class="label label-success">наименование признака К</span> и составляет <span class="label label-success">столько</span> процентов.</p>-->
-                                <!--<p>Или тенденции в признаках распределены равномерно: Рост = «столько» процентов, Падение = «столько» процентов, Стабильность = «столько» процентов.</p>-->
-                            <!--</div>-->
-
-                            <!--<p><strong><span class="glyphicon glyphicon-map-marker"></span> Пространственное распределение в кластере:</strong></p>-->
-                            <!--<div class="block">-->
-                                <!--<p>Большинство объектов исследования относятся к <span class="label label-success">наименование географического места</span> (или другого пространства ), что составляет <span class="label label-success">столько-то процентов</span>.</p>-->
-                                <!--<p>Наименьшее количество объектов исследования относятся к <span class="label label-success">наименование географического места</span> (или другого пространства), что составляет <span class="label label-success">столько-то процентов</span>.</p>-->
-                                <!--<p>Или объекты исследования равномерно распределены в пространстве <span class="label label-success">наименование пространства</span>).</p>-->
-                            <!--</div>-->
-
-                        </div>
-                    </div>
-                </div>
-
-            
-
-                <div class="block">
-                    <div class="panel panel-success">
-                        <div class="panel-heading">
-                            <span class="label label-success">#ID: 2</span>
-                            <span style="display: inline-block; width: 70px;"></span>
-                            Содержит <span class="label label-success">11%</span> исследуемых объектов
-                        </div>
-                        <div class="panel-body">
-
-                            <p><strong><span class="glyphicon glyphicon-th-list"></span> Объекты вошедшие в кластер</strong></p>
-                            <div class="block">
-                                
-                                    <span class="label label-success">Elasticsearch</span>
-                                
-                            </div>
-                            <br />
-
-                            <p><strong><span class="glyphicon glyphicon-th-large"></span> Характеристика признаков внутри кластера</strong></p>
-                            <div class="block">
-                                <p><span class="label label-primary"></span></p>
-                                <p>Максимальное значение: <span class="label label-success">37</span></p>
-                                <p>Среднее значение: <span class="label label-success">5</span></p>
-                                <p>Минимальное значение: <span class="label label-success">0</span></p>
-                            </div>
-
-                            <p><strong><span class="glyphicon glyphicon-signal"></span> Лингвистическое резюмирование тенденции роста/падения</strong></p>
-                            <div class="block">
-                                <p>Фактор изменения тренда: <span class="label label-success">29.17</span></p>
-                                <p>Лингвистическая оценка:
-                                    <span class="label label-success">
-                                        <span class="glyphicon glyphicon-arrow-up"></span> High growth
-                                    </span>
-                                </p>
-                                <img src="fuzzy_2.png">
-                            </div>
-                            <br />
-
-                            <!--<p><strong><span class="glyphicon glyphicon-time"></span> Темпоральная характеристика по типам тенденции</strong>:</p>-->
-                            <!-- типы тенденции: рост,падение,стабильность -->
-                            <!--<div class="block">-->
-                                <!--<p>Типичная тенденция <span class="label label-success">тип тенденции</span> соответствует <span class="label label-success">наименование признака 1</span> и составляет <span class="label label-success">столько</span> процентов.</p>-->
-                                <!--<p>Нетипичная тенденция <span class="label label-success">тип тенденции</span> соответствует <span class="label label-success">наименование признака К</span> и составляет <span class="label label-success">столько</span> процентов.</p>-->
-                                <!--<p>Или тенденции в признаках распределены равномерно: Рост = «столько» процентов, Падение = «столько» процентов, Стабильность = «столько» процентов.</p>-->
-                            <!--</div>-->
-
-                            <!--<p><strong><span class="glyphicon glyphicon-map-marker"></span> Пространственное распределение в кластере:</strong></p>-->
-                            <!--<div class="block">-->
-                                <!--<p>Большинство объектов исследования относятся к <span class="label label-success">наименование географического места</span> (или другого пространства ), что составляет <span class="label label-success">столько-то процентов</span>.</p>-->
-                                <!--<p>Наименьшее количество объектов исследования относятся к <span class="label label-success">наименование географического места</span> (или другого пространства), что составляет <span class="label label-success">столько-то процентов</span>.</p>-->
-                                <!--<p>Или объекты исследования равномерно распределены в пространстве <span class="label label-success">наименование пространства</span>).</p>-->
-                            <!--</div>-->
-
-                        </div>
-                    </div>
-                </div>
-
-            
-
-                <div class="block">
-                    <div class="panel panel-success">
-                        <div class="panel-heading">
-                            <span class="label label-success">#ID: 3</span>
-                            <span style="display: inline-block; width: 70px;"></span>
-                            Содержит <span class="label label-success">11%</span> исследуемых объектов
-                        </div>
-                        <div class="panel-body">
-
-                            <p><strong><span class="glyphicon glyphicon-th-list"></span> Объекты вошедшие в кластер</strong></p>
-                            <div class="block">
-                                
-                                    <span class="label label-success">Lucene</span>
-                                
-                            </div>
-                            <br />
-
-                            <p><strong><span class="glyphicon glyphicon-th-large"></span> Характеристика признаков внутри кластера</strong></p>
-                            <div class="block">
-                                <p><span class="label label-primary"></span></p>
-                                <p>Максимальное значение: <span class="label label-success">34</span></p>
-                                <p>Среднее значение: <span class="label label-success">18</span></p>
-                                <p>Минимальное значение: <span class="label label-success">4</span></p>
-                            </div>
-
-                            <p><strong><span class="glyphicon glyphicon-signal"></span> Лингвистическое резюмирование тенденции роста/падения</strong></p>
-                            <div class="block">
-                                <p>Фактор изменения тренда: <span class="label label-danger">0.68</span></p>
-                                <p>Лингвистическая оценка:
-                                    <span class="label label-danger">
-                                        <span class="glyphicon glyphicon-arrow-down"></span> Fall
-                                    </span>
-                                </p>
-                                <img src="fuzzy_3.png">
-                            </div>
-                            <br />
-
-                            <!--<p><strong><span class="glyphicon glyphicon-time"></span> Темпоральная характеристика по типам тенденции</strong>:</p>-->
-                            <!-- типы тенденции: рост,падение,стабильность -->
-                            <!--<div class="block">-->
-                                <!--<p>Типичная тенденция <span class="label label-success">тип тенденции</span> соответствует <span class="label label-success">наименование признака 1</span> и составляет <span class="label label-success">столько</span> процентов.</p>-->
-                                <!--<p>Нетипичная тенденция <span class="label label-success">тип тенденции</span> соответствует <span class="label label-success">наименование признака К</span> и составляет <span class="label label-success">столько</span> процентов.</p>-->
-                                <!--<p>Или тенденции в признаках распределены равномерно: Рост = «столько» процентов, Падение = «столько» процентов, Стабильность = «столько» процентов.</p>-->
-                            <!--</div>-->
-
-                            <!--<p><strong><span class="glyphicon glyphicon-map-marker"></span> Пространственное распределение в кластере:</strong></p>-->
-                            <!--<div class="block">-->
-                                <!--<p>Большинство объектов исследования относятся к <span class="label label-success">наименование географического места</span> (или другого пространства ), что составляет <span class="label label-success">столько-то процентов</span>.</p>-->
-                                <!--<p>Наименьшее количество объектов исследования относятся к <span class="label label-success">наименование географического места</span> (или другого пространства), что составляет <span class="label label-success">столько-то процентов</span>.</p>-->
-                                <!--<p>Или объекты исследования равномерно распределены в пространстве <span class="label label-success">наименование пространства</span>).</p>-->
-                            <!--</div>-->
-
-                        </div>
-                    </div>
-                </div>
-
-            
-            <br />
-
-            <h3>Неклассифицированные объекты</h3>
-            <p>Исходные данные по объектам в графическом виде</p>
-            <div class="block" style="text-align: center;" >
-                <img src="non_classified.png">
-            </div>
             <div class="block">
-                <p><strong>Общее количество</strong> исследуемых объектов: <span class="label label-success">5</span>.</p>
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <span class="label label-success">#ID: 0</span>
+                        <span style="display: inline-block; width: 70px;"></span>
+                        Содержит <span class="label label-success">11%</span> исследуемых объектов
+                    </div>
+                    <div class="panel-body">
+
+                        <p><strong><span class="glyphicon glyphicon-th-large"></span> Характеристика признаков внутри кластера</strong></p>
+                        <div class="block">
+                            <p><span class="label label-primary"></span></p>
+                            <p>Максимальное значение: <span class="label label-success">34</span></p>
+                            <p>Среднее значение: <span class="label label-success">18</span></p>
+                            <p>Минимальное значение: <span class="label label-success">4</span></p>
+                        </div>
+
+                        <!--<p><strong><span class="glyphicon glyphicon-time"></span> Темпоральная характеристика по типам тенденции</strong>:</p>-->
+                        <!-- типы тенденции: рост,падение,стабильность -->
+                        <!--<div class="block">-->
+                            <!--<p>Типичная тенденция <span class="label label-success">тип тенденции</span> соответствует <span class="label label-success">наименование признака 1</span> и составляет <span class="label label-success">столько</span> процентов.</p>-->
+                            <!--<p>Нетипичная тенденция <span class="label label-success">тип тенденции</span> соответствует <span class="label label-success">наименование признака К</span> и составляет <span class="label label-success">столько</span> процентов.</p>-->
+                            <!--<p>Или тенденции в признаках распределены равномерно: Рост = «столько» процентов, Падение = «столько» процентов, Стабильность = «столько» процентов.</p>-->
+                        <!--</div>-->
+
+                        <!--<p><strong><span class="glyphicon glyphicon-map-marker"></span> Пространственное распределение в кластере:</strong></p>-->
+                        <!--<div class="block">-->
+                            <!--<p>Большинство объектов исследования относятся к <span class="label label-success">наименование географического места</span> (или другого пространства ), что составляет <span class="label label-success">столько-то процентов</span>.</p>-->
+                            <!--<p>Наименьшее количество объектов исследования относятся к <span class="label label-success">наименование географического места</span> (или другого пространства), что составляет <span class="label label-success">столько-то процентов</span>.</p>-->
+                            <!--<p>Или объекты исследования равномерно распределены в пространстве <span class="label label-success">наименование пространства</span>).</p>-->
+                        <!--</div>-->
+
+                    </div>
+                </div>
             </div>
-            <h3>Предсказанные классы объектов</h3>
-            <div class="block"><table border="1" class="dataframe table table-striped table-bordered table-hover table-condensed">
+
+        
+
+            <div class="block">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <span class="label label-success">#ID: 1</span>
+                        <span style="display: inline-block; width: 70px;"></span>
+                        Содержит <span class="label label-success">44%</span> исследуемых объектов
+                    </div>
+                    <div class="panel-body">
+
+                        <p><strong><span class="glyphicon glyphicon-th-large"></span> Характеристика признаков внутри кластера</strong></p>
+                        <div class="block">
+                            <p><span class="label label-primary"></span></p>
+                            <p>Максимальное значение: <span class="label label-success">100</span></p>
+                            <p>Среднее значение: <span class="label label-success">20</span></p>
+                            <p>Минимальное значение: <span class="label label-success">0</span></p>
+                        </div>
+
+                        <!--<p><strong><span class="glyphicon glyphicon-time"></span> Темпоральная характеристика по типам тенденции</strong>:</p>-->
+                        <!-- типы тенденции: рост,падение,стабильность -->
+                        <!--<div class="block">-->
+                            <!--<p>Типичная тенденция <span class="label label-success">тип тенденции</span> соответствует <span class="label label-success">наименование признака 1</span> и составляет <span class="label label-success">столько</span> процентов.</p>-->
+                            <!--<p>Нетипичная тенденция <span class="label label-success">тип тенденции</span> соответствует <span class="label label-success">наименование признака К</span> и составляет <span class="label label-success">столько</span> процентов.</p>-->
+                            <!--<p>Или тенденции в признаках распределены равномерно: Рост = «столько» процентов, Падение = «столько» процентов, Стабильность = «столько» процентов.</p>-->
+                        <!--</div>-->
+
+                        <!--<p><strong><span class="glyphicon glyphicon-map-marker"></span> Пространственное распределение в кластере:</strong></p>-->
+                        <!--<div class="block">-->
+                            <!--<p>Большинство объектов исследования относятся к <span class="label label-success">наименование географического места</span> (или другого пространства ), что составляет <span class="label label-success">столько-то процентов</span>.</p>-->
+                            <!--<p>Наименьшее количество объектов исследования относятся к <span class="label label-success">наименование географического места</span> (или другого пространства), что составляет <span class="label label-success">столько-то процентов</span>.</p>-->
+                            <!--<p>Или объекты исследования равномерно распределены в пространстве <span class="label label-success">наименование пространства</span>).</p>-->
+                        <!--</div>-->
+
+                    </div>
+                </div>
+            </div>
+
+        
+
+            <div class="block">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <span class="label label-success">#ID: 2</span>
+                        <span style="display: inline-block; width: 70px;"></span>
+                        Содержит <span class="label label-success">11%</span> исследуемых объектов
+                    </div>
+                    <div class="panel-body">
+
+                        <p><strong><span class="glyphicon glyphicon-th-large"></span> Характеристика признаков внутри кластера</strong></p>
+                        <div class="block">
+                            <p><span class="label label-primary"></span></p>
+                            <p>Максимальное значение: <span class="label label-success">37</span></p>
+                            <p>Среднее значение: <span class="label label-success">5</span></p>
+                            <p>Минимальное значение: <span class="label label-success">0</span></p>
+                        </div>
+
+                        <!--<p><strong><span class="glyphicon glyphicon-time"></span> Темпоральная характеристика по типам тенденции</strong>:</p>-->
+                        <!-- типы тенденции: рост,падение,стабильность -->
+                        <!--<div class="block">-->
+                            <!--<p>Типичная тенденция <span class="label label-success">тип тенденции</span> соответствует <span class="label label-success">наименование признака 1</span> и составляет <span class="label label-success">столько</span> процентов.</p>-->
+                            <!--<p>Нетипичная тенденция <span class="label label-success">тип тенденции</span> соответствует <span class="label label-success">наименование признака К</span> и составляет <span class="label label-success">столько</span> процентов.</p>-->
+                            <!--<p>Или тенденции в признаках распределены равномерно: Рост = «столько» процентов, Падение = «столько» процентов, Стабильность = «столько» процентов.</p>-->
+                        <!--</div>-->
+
+                        <!--<p><strong><span class="glyphicon glyphicon-map-marker"></span> Пространственное распределение в кластере:</strong></p>-->
+                        <!--<div class="block">-->
+                            <!--<p>Большинство объектов исследования относятся к <span class="label label-success">наименование географического места</span> (или другого пространства ), что составляет <span class="label label-success">столько-то процентов</span>.</p>-->
+                            <!--<p>Наименьшее количество объектов исследования относятся к <span class="label label-success">наименование географического места</span> (или другого пространства), что составляет <span class="label label-success">столько-то процентов</span>.</p>-->
+                            <!--<p>Или объекты исследования равномерно распределены в пространстве <span class="label label-success">наименование пространства</span>).</p>-->
+                        <!--</div>-->
+
+                    </div>
+                </div>
+            </div>
+
+        
+
+            <div class="block">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <span class="label label-success">#ID: 3</span>
+                        <span style="display: inline-block; width: 70px;"></span>
+                        Содержит <span class="label label-success">33%</span> исследуемых объектов
+                    </div>
+                    <div class="panel-body">
+
+                        <p><strong><span class="glyphicon glyphicon-th-large"></span> Характеристика признаков внутри кластера</strong></p>
+                        <div class="block">
+                            <p><span class="label label-primary"></span></p>
+                            <p>Максимальное значение: <span class="label label-success">71</span></p>
+                            <p>Среднее значение: <span class="label label-success">16</span></p>
+                            <p>Минимальное значение: <span class="label label-success">0</span></p>
+                        </div>
+
+                        <!--<p><strong><span class="glyphicon glyphicon-time"></span> Темпоральная характеристика по типам тенденции</strong>:</p>-->
+                        <!-- типы тенденции: рост,падение,стабильность -->
+                        <!--<div class="block">-->
+                            <!--<p>Типичная тенденция <span class="label label-success">тип тенденции</span> соответствует <span class="label label-success">наименование признака 1</span> и составляет <span class="label label-success">столько</span> процентов.</p>-->
+                            <!--<p>Нетипичная тенденция <span class="label label-success">тип тенденции</span> соответствует <span class="label label-success">наименование признака К</span> и составляет <span class="label label-success">столько</span> процентов.</p>-->
+                            <!--<p>Или тенденции в признаках распределены равномерно: Рост = «столько» процентов, Падение = «столько» процентов, Стабильность = «столько» процентов.</p>-->
+                        <!--</div>-->
+
+                        <!--<p><strong><span class="glyphicon glyphicon-map-marker"></span> Пространственное распределение в кластере:</strong></p>-->
+                        <!--<div class="block">-->
+                            <!--<p>Большинство объектов исследования относятся к <span class="label label-success">наименование географического места</span> (или другого пространства ), что составляет <span class="label label-success">столько-то процентов</span>.</p>-->
+                            <!--<p>Наименьшее количество объектов исследования относятся к <span class="label label-success">наименование географического места</span> (или другого пространства), что составляет <span class="label label-success">столько-то процентов</span>.</p>-->
+                            <!--<p>Или объекты исследования равномерно распределены в пространстве <span class="label label-success">наименование пространства</span>).</p>-->
+                        <!--</div>-->
+
+                    </div>
+                </div>
+            </div>
+
+        
+
+        <h3>Неклассифицированные объекты</h3>
+        <p>Исходные данные по объектам в графическом виде</p>
+        <div class="block" style="text-align: center;" >
+            <img src="non_classified.png">
+        </div>
+        <div class="block">
+            <p><strong>Общее количество</strong> исследуемых объектов: <span class="label label-success">5</span>.</p>
+        </div>
+        <h3>Предсказанные классы объектов</h3>
+        <div class="block"><table border="1" class="dataframe table table-striped table-bordered table-hover table-condensed">
   <tbody>
     <tr>
       <th>CouchDB</th>
-      <td>0</td>
-      <td>[0.6, 0.4, 0.0, 0.0]</td>
+      <td>1</td>
+      <td>[0.0, 0.5, 0.0, 0.5]</td>
     </tr>
     <tr>
       <th>Apache Hadoop</th>
-      <td>3</td>
-      <td>[0.3, 0.3, 0.0, 0.4]</td>
+      <td>1</td>
+      <td>[0.2, 0.4, 0.0, 0.4]</td>
     </tr>
     <tr>
       <th>HPCC</th>
-      <td>3</td>
-      <td>[0.3, 0.3, 0.0, 0.4]</td>
+      <td>0</td>
+      <td>[0.5, 0.2, 0.0, 0.3]</td>
     </tr>
     <tr>
       <th>Riak</th>
-      <td>1</td>
-      <td>[0.0, 0.7, 0.0, 0.3]</td>
+      <td>3</td>
+      <td>[0.1, 0.0, 0.0, 0.9]</td>
     </tr>
     <tr>
       <th>neo4j</th>
-      <td>3</td>
-      <td>[0.3, 0.3, 0.0, 0.4]</td>
+      <td>1</td>
+      <td>[0.2, 0.4, 0.0, 0.4]</td>
     </tr>
   </tbody>
 </table></div>
 
-            <br />
-            <h3>Исходные данные для темпорального анализа</h3>
-            <div class="block block--scrollable"><table border="1" class="dataframe table table-striped table-bordered table-hover table-condensed">
+        <br />
+        <h3>Исходные данные для анализа</h3>
+        <div class="block block--scrollable"><table border="1" class="dataframe table table-striped table-bordered table-hover table-condensed">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -8151,1271 +8078,9 @@
     </tr>
   </tbody>
 </table></div>
-        </div>
 
-        <div id="geo" class="tabcontent">
-            <h3>Общая характеристика кластеров</h3>
-            <div class="block">
-                <p>
-                    <strong>Общее количество</strong>
-                    исследуемых объектов:
-                    <span class="label label-success">
-                        73
-                    </span>.
-                </p>
-
-                <p>Список исследуемых объектов:
-                    
-                    <span class="label label-success">IBM</span>
-                    
-                    <span class="label label-success">HP</span>
-                    
-                    <span class="label label-success">Dell</span>
-                    
-                    <span class="label label-success">SAP</span>
-                    
-                    <span class="label label-success">Teradata</span>
-                    
-                    <span class="label label-success">Oracle</span>
-                    
-                    <span class="label label-success">SAS Institute</span>
-                    
-                    <span class="label label-success">Palantir</span>
-                    
-                    <span class="label label-success">Accenture</span>
-                    
-                    <span class="label label-success">PWC</span>
-                    
-                    <span class="label label-success">Deloitte</span>
-                    
-                    <span class="label label-success">Pivotal</span>
-                    
-                    <span class="label label-success">Cisco Systems</span>
-                    
-                    <span class="label label-success">Splunk</span>
-                    
-                    <span class="label label-success">Microsoft</span>
-                    
-                    <span class="label label-success">Amazon</span>
-                    
-                    <span class="label label-success">Hitachi</span>
-                    
-                    <span class="label label-success">CSC</span>
-                    
-                    <span class="label label-success">CenturyLink</span>
-                    
-                    <span class="label label-success">Google</span>
-                    
-                    <span class="label label-success">Fusion-io</span>
-                    
-                    <span class="label label-success">NetApp</span>
-                    
-                    <span class="label label-success">Intel</span>
-                    
-                    <span class="label label-success">EMC</span>
-                    
-                    <span class="label label-success">Mu Sigma</span>
-                    
-                    <span class="label label-success">TCS</span>
-                    
-                    <span class="label label-success">Microstrategy</span>
-                    
-                    <span class="label label-success">Actian</span>
-                    
-                    <span class="label label-success">Booz Allen Hamilton</span>
-                    
-                    <span class="label label-success">Opera Solutions</span>
-                    
-                    <span class="label label-success">Red Hat</span>
-                    
-                    <span class="label label-success">Capgemini</span>
-                    
-                    <span class="label label-success">Informatica</span>
-                    
-                    <span class="label label-success">MarkLogic</span>
-                    
-                    <span class="label label-success">General Electric</span>
-                    
-                    <span class="label label-success">VMware</span>
-                    
-                    <span class="label label-success">Syncsort</span>
-                    
-                    <span class="label label-success">Cloudera</span>
-                    
-                    <span class="label label-success">SGI</span>
-                    
-                    <span class="label label-success">MongoDB</span>
-                    
-                    <span class="label label-success">Hortonworks</span>
-                    
-                    <span class="label label-success">DDN</span>
-                    
-                    <span class="label label-success">Guavus</span>
-                    
-                    <span class="label label-success">Alteryx</span>
-                    
-                    <span class="label label-success">1010data</span>
-                    
-                    <span class="label label-success">Rackspace</span>
-                    
-                    <span class="label label-success">TIBCO</span>
-                    
-                    <span class="label label-success">MapR</span>
-                    
-                    <span class="label label-success">Tableau Software</span>
-                    
-                    <span class="label label-success">Qlik</span>
-                    
-                    <span class="label label-success">Attivio</span>
-                    
-                    <span class="label label-success">Juniper</span>
-                    
-                    <span class="label label-success">DataStax</span>
-                    
-                    <span class="label label-success">GoodData</span>
-                    
-                    <span class="label label-success">Attunity</span>
-                    
-                    <span class="label label-success">Fractal Analytics</span>
-                    
-                    <span class="label label-success">Pentaho</span>
-                    
-                    <span class="label label-success">Datameer</span>
-                    
-                    <span class="label label-success">Couchbase</span>
-                    
-                    <span class="label label-success">Basho</span>
-                    
-                    <span class="label label-success">Kognitio</span>
-                    
-                    <span class="label label-success">Sumo Logic</span>
-                    
-                    <span class="label label-success">Jaspersoft</span>
-                    
-                    <span class="label label-success">SiSense</span>
-                    
-                    <span class="label label-success">Talend</span>
-                    
-                    <span class="label label-success">Actuate</span>
-                    
-                    <span class="label label-success">Revolution Analytics</span>
-                    
-                    <span class="label label-success">Aerospike</span>
-                    
-                    <span class="label label-success">Neo Technologies</span>
-                    
-                    <span class="label label-success">Digital Reasoning</span>
-                    
-                    <span class="label label-success">Tresata</span>
-                    
-                    <span class="label label-success">Rainstor</span>
-                    
-                    <span class="label label-success">Think Big Analytics</span>
-                    .
-                </p>
-
-                <p>
-                    <strong>Объекты были сгруппированы</strong>
-                    в
-                    <span class="label label-success">
-                        6
-                    </span>
-                    кластера(-ов).
-                </p>
-
-                <p>
-                    Количество объектов изменять
-                    <span class="label label-success">
-                        можно
-                    </span>
-                    , количество кластеров изменять
-                    <span class="label label-danger">
-                        нельзя
-                    </span>
-                    .
-                </p>
-
-                <p>
-                    <strong>Большинство</strong>
-                    объектов исследования сгруппированы в кластерах:
-                    <span class="label label-success">
-                        [0]
-                    </span>
-                    .
-                </p>
-
-                <p>
-                    <strong>Наименьшее количество</strong>
-                    объектов исследования сгруппированы в кластерах:
-                    <span class="label label-success">
-                        [1]
-                    </span>
-                    .
-                </p>
-            </div>
-            <br />
-
-            <h3>Нечеткая шкала лингвистического резюмирования</h3>
-            <div class="block" style="font-style: italic;">
-                Описание (лингвистическая оценка, фактор изменения, комментарий):
-                <ul>
-                    <li class="text-danger"><strong>(0% - 5%) - незначительная доля прибыли</strong></li>
-                    <li class="text-danger">(5% - 30%) - малая доля прибыли</li>
-                    <li class="text-muted">(30% - 65%) - средняя доля прибыли</li>
-                    <li class="text-success">(65% - 100%) - основная доля прибыли</li>
-                </ul>
-            </div>
-
-            <div class="block" style="text-align: center;">
-                <img src="geo_fuzzy_scale.png">
-            </div>
-            <br />
-
-            <h3>Характеристики каждого кластера</h3>
-
-            
-
-                <div class="block">
-                    <div class="panel panel-success">
-                        <div class="panel-heading">
-                            <span class="label label-success">#ID: 1</span>
-                            <span style="display: inline-block; width: 70px;"></span>
-                            Содержит <span class="label label-success">47%</span> исследуемых объектов
-                        </div>
-                        <div class="panel-body">
-
-                            <p><strong><span class="glyphicon glyphicon-th-list"></span> Объекты вошедшие в кластер</strong></p>
-                            <div class="block">
-                                
-                                    <span class="label label-success">MarkLogic</span>
-                                
-                                    <span class="label label-success">Syncsort</span>
-                                
-                                    <span class="label label-success">Cloudera</span>
-                                
-                                    <span class="label label-success">MongoDB</span>
-                                
-                                    <span class="label label-success">Hortonworks</span>
-                                
-                                    <span class="label label-success">Guavus</span>
-                                
-                                    <span class="label label-success">Alteryx</span>
-                                
-                                    <span class="label label-success">1010data</span>
-                                
-                                    <span class="label label-success">TIBCO</span>
-                                
-                                    <span class="label label-success">MapR</span>
-                                
-                                    <span class="label label-success">Tableau Software</span>
-                                
-                                    <span class="label label-success">Qlik</span>
-                                
-                                    <span class="label label-success">Attivio</span>
-                                
-                                    <span class="label label-success">DataStax</span>
-                                
-                                    <span class="label label-success">GoodData</span>
-                                
-                                    <span class="label label-success">Attunity</span>
-                                
-                                    <span class="label label-success">Fractal Analytics</span>
-                                
-                                    <span class="label label-success">Pentaho</span>
-                                
-                                    <span class="label label-success">Datameer</span>
-                                
-                                    <span class="label label-success">Couchbase</span>
-                                
-                                    <span class="label label-success">Basho</span>
-                                
-                                    <span class="label label-success">Kognitio</span>
-                                
-                                    <span class="label label-success">Sumo Logic</span>
-                                
-                                    <span class="label label-success">Jaspersoft</span>
-                                
-                                    <span class="label label-success">SiSense</span>
-                                
-                                    <span class="label label-success">Talend</span>
-                                
-                                    <span class="label label-success">Actuate</span>
-                                
-                                    <span class="label label-success">Revolution Analytics</span>
-                                
-                                    <span class="label label-success">Aerospike</span>
-                                
-                                    <span class="label label-success">Neo Technologies</span>
-                                
-                                    <span class="label label-success">Digital Reasoning</span>
-                                
-                                    <span class="label label-success">Tresata</span>
-                                
-                                    <span class="label label-success">Rainstor</span>
-                                
-                                    <span class="label label-success">Think Big Analytics</span>
-                                
-                            </div>
-                            <br />
-
-                            <p><strong><span class="glyphicon glyphicon-th-large"></span> Характеристика признаков внутри кластера</strong></p>
-                            <div class="block">
-                                <p><span class="label label-primary"></span></p>
-                                <p>Средний объем выручки: <span class="label label-success">29</span>(млн $)</p>
-                                <p>Доминирующий сегмент в выручке: <span class="label label-success">Big Data Software Revenue</span></p>
-                            </div>
-
-                            <p><strong><span class="glyphicon glyphicon-signal"></span> Лингвистическое резюмирование доли выручки сегмента Big Data</strong></p>
-                            <div class="block">
-                                <p>Доля выручки сегмента Big Data в общем объеме:
-                                    <span class="label label-success">
-                                        85.43
-                                    </span>
-                                </p>
-                                <p>Лингвистическая оценка:
-                                    <span class="label label-success">
-                                        Основная
-                                    </span>
-                                </p>
-                                <img src="geo_fuzzy_0.png">
-                            </div>
-                            <br />
-                        </div>
-                    </div>
-                </div>
-
-            
-
-                <div class="block">
-                    <div class="panel panel-success">
-                        <div class="panel-heading">
-                            <span class="label label-success">#ID: 2</span>
-                            <span style="display: inline-block; width: 70px;"></span>
-                            Содержит <span class="label label-success">1%</span> исследуемых объектов
-                        </div>
-                        <div class="panel-body">
-
-                            <p><strong><span class="glyphicon glyphicon-th-list"></span> Объекты вошедшие в кластер</strong></p>
-                            <div class="block">
-                                
-                                    <span class="label label-success">IBM</span>
-                                
-                            </div>
-                            <br />
-
-                            <p><strong><span class="glyphicon glyphicon-th-large"></span> Характеристика признаков внутри кластера</strong></p>
-                            <div class="block">
-                                <p><span class="label label-primary"></span></p>
-                                <p>Средний объем выручки: <span class="label label-success">1368</span>(млн $)</p>
-                                <p>Доминирующий сегмент в выручке: <span class="label label-success">Big Data Services Revenue</span></p>
-                            </div>
-
-                            <p><strong><span class="glyphicon glyphicon-signal"></span> Лингвистическое резюмирование доли выручки сегмента Big Data</strong></p>
-                            <div class="block">
-                                <p>Доля выручки сегмента Big Data в общем объеме:
-                                    <span class="label label-danger">
-                                        1.51
-                                    </span>
-                                </p>
-                                <p>Лингвистическая оценка:
-                                    <span class="label label-danger">
-                                        Незначительная
-                                    </span>
-                                </p>
-                                <img src="geo_fuzzy_1.png">
-                            </div>
-                            <br />
-                        </div>
-                    </div>
-                </div>
-
-            
-
-                <div class="block">
-                    <div class="panel panel-success">
-                        <div class="panel-heading">
-                            <span class="label label-success">#ID: 3</span>
-                            <span style="display: inline-block; width: 70px;"></span>
-                            Содержит <span class="label label-success">8%</span> исследуемых объектов
-                        </div>
-                        <div class="panel-body">
-
-                            <p><strong><span class="glyphicon glyphicon-th-list"></span> Объекты вошедшие в кластер</strong></p>
-                            <div class="block">
-                                
-                                    <span class="label label-success">SAP</span>
-                                
-                                    <span class="label label-success">Teradata</span>
-                                
-                                    <span class="label label-success">Oracle</span>
-                                
-                                    <span class="label label-success">SAS Institute</span>
-                                
-                                    <span class="label label-success">Palantir</span>
-                                
-                                    <span class="label label-success">Accenture</span>
-                                
-                            </div>
-                            <br />
-
-                            <p><strong><span class="glyphicon glyphicon-th-large"></span> Характеристика признаков внутри кластера</strong></p>
-                            <div class="block">
-                                <p><span class="label label-primary"></span></p>
-                                <p>Средний объем выручки: <span class="label label-success">478</span>(млн $)</p>
-                                <p>Доминирующий сегмент в выручке: <span class="label label-success">Big Data Services Revenue</span></p>
-                            </div>
-
-                            <p><strong><span class="glyphicon glyphicon-signal"></span> Лингвистическое резюмирование доли выручки сегмента Big Data</strong></p>
-                            <div class="block">
-                                <p>Доля выручки сегмента Big Data в общем объеме:
-                                    <span class="label label-danger">
-                                        21.46
-                                    </span>
-                                </p>
-                                <p>Лингвистическая оценка:
-                                    <span class="label label-danger">
-                                        Малая
-                                    </span>
-                                </p>
-                                <img src="geo_fuzzy_2.png">
-                            </div>
-                            <br />
-                        </div>
-                    </div>
-                </div>
-
-            
-
-                <div class="block">
-                    <div class="panel panel-success">
-                        <div class="panel-heading">
-                            <span class="label label-success">#ID: 4</span>
-                            <span style="display: inline-block; width: 70px;"></span>
-                            Содержит <span class="label label-success">30%</span> исследуемых объектов
-                        </div>
-                        <div class="panel-body">
-
-                            <p><strong><span class="glyphicon glyphicon-th-list"></span> Объекты вошедшие в кластер</strong></p>
-                            <div class="block">
-                                
-                                    <span class="label label-success">CSC</span>
-                                
-                                    <span class="label label-success">CenturyLink</span>
-                                
-                                    <span class="label label-success">Google</span>
-                                
-                                    <span class="label label-success">Fusion-io</span>
-                                
-                                    <span class="label label-success">NetApp</span>
-                                
-                                    <span class="label label-success">Intel</span>
-                                
-                                    <span class="label label-success">EMC</span>
-                                
-                                    <span class="label label-success">Mu Sigma</span>
-                                
-                                    <span class="label label-success">TCS</span>
-                                
-                                    <span class="label label-success">Microstrategy</span>
-                                
-                                    <span class="label label-success">Actian</span>
-                                
-                                    <span class="label label-success">Booz Allen Hamilton</span>
-                                
-                                    <span class="label label-success">Opera Solutions</span>
-                                
-                                    <span class="label label-success">Red Hat</span>
-                                
-                                    <span class="label label-success">Capgemini</span>
-                                
-                                    <span class="label label-success">Informatica</span>
-                                
-                                    <span class="label label-success">General Electric</span>
-                                
-                                    <span class="label label-success">VMware</span>
-                                
-                                    <span class="label label-success">SGI</span>
-                                
-                                    <span class="label label-success">DDN</span>
-                                
-                                    <span class="label label-success">Rackspace</span>
-                                
-                                    <span class="label label-success">Juniper</span>
-                                
-                            </div>
-                            <br />
-
-                            <p><strong><span class="glyphicon glyphicon-th-large"></span> Характеристика признаков внутри кластера</strong></p>
-                            <div class="block">
-                                <p><span class="label label-primary"></span></p>
-                                <p>Средний объем выручки: <span class="label label-success">123</span>(млн $)</p>
-                                <p>Доминирующий сегмент в выручке: <span class="label label-success">Big Data Services Revenue</span></p>
-                            </div>
-
-                            <p><strong><span class="glyphicon glyphicon-signal"></span> Лингвистическое резюмирование доли выручки сегмента Big Data</strong></p>
-                            <div class="block">
-                                <p>Доля выручки сегмента Big Data в общем объеме:
-                                    <span class="label label-danger">
-                                        20.91
-                                    </span>
-                                </p>
-                                <p>Лингвистическая оценка:
-                                    <span class="label label-danger">
-                                        Малая
-                                    </span>
-                                </p>
-                                <img src="geo_fuzzy_3.png">
-                            </div>
-                            <br />
-                        </div>
-                    </div>
-                </div>
-
-            
-
-                <div class="block">
-                    <div class="panel panel-success">
-                        <div class="panel-heading">
-                            <span class="label label-success">#ID: 5</span>
-                            <span style="display: inline-block; width: 70px;"></span>
-                            Содержит <span class="label label-success">3%</span> исследуемых объектов
-                        </div>
-                        <div class="panel-body">
-
-                            <p><strong><span class="glyphicon glyphicon-th-list"></span> Объекты вошедшие в кластер</strong></p>
-                            <div class="block">
-                                
-                                    <span class="label label-success">HP</span>
-                                
-                                    <span class="label label-success">Dell</span>
-                                
-                            </div>
-                            <br />
-
-                            <p><strong><span class="glyphicon glyphicon-th-large"></span> Характеристика признаков внутри кластера</strong></p>
-                            <div class="block">
-                                <p><span class="label label-primary"></span></p>
-                                <p>Средний объем выручки: <span class="label label-success">760</span>(млн $)</p>
-                                <p>Доминирующий сегмент в выручке: <span class="label label-success">Big Data Hardware Revenue</span></p>
-                            </div>
-
-                            <p><strong><span class="glyphicon glyphicon-signal"></span> Лингвистическое резюмирование доли выручки сегмента Big Data</strong></p>
-                            <div class="block">
-                                <p>Доля выручки сегмента Big Data в общем объеме:
-                                    <span class="label label-danger">
-                                        1.51
-                                    </span>
-                                </p>
-                                <p>Лингвистическая оценка:
-                                    <span class="label label-danger">
-                                        Незначительная
-                                    </span>
-                                </p>
-                                <img src="geo_fuzzy_4.png">
-                            </div>
-                            <br />
-                        </div>
-                    </div>
-                </div>
-
-            
-
-                <div class="block">
-                    <div class="panel panel-success">
-                        <div class="panel-heading">
-                            <span class="label label-success">#ID: 6</span>
-                            <span style="display: inline-block; width: 70px;"></span>
-                            Содержит <span class="label label-success">11%</span> исследуемых объектов
-                        </div>
-                        <div class="panel-body">
-
-                            <p><strong><span class="glyphicon glyphicon-th-list"></span> Объекты вошедшие в кластер</strong></p>
-                            <div class="block">
-                                
-                                    <span class="label label-success">PWC</span>
-                                
-                                    <span class="label label-success">Deloitte</span>
-                                
-                                    <span class="label label-success">Pivotal</span>
-                                
-                                    <span class="label label-success">Cisco Systems</span>
-                                
-                                    <span class="label label-success">Splunk</span>
-                                
-                                    <span class="label label-success">Microsoft</span>
-                                
-                                    <span class="label label-success">Amazon</span>
-                                
-                                    <span class="label label-success">Hitachi</span>
-                                
-                            </div>
-                            <br />
-
-                            <p><strong><span class="glyphicon glyphicon-th-large"></span> Характеристика признаков внутри кластера</strong></p>
-                            <div class="block">
-                                <p><span class="label label-primary"></span></p>
-                                <p>Средний объем выручки: <span class="label label-success">289</span>(млн $)</p>
-                                <p>Доминирующий сегмент в выручке: <span class="label label-success">Big Data Services Revenue</span></p>
-                            </div>
-
-                            <p><strong><span class="glyphicon glyphicon-signal"></span> Лингвистическое резюмирование доли выручки сегмента Big Data</strong></p>
-                            <div class="block">
-                                <p>Доля выручки сегмента Big Data в общем объеме:
-                                    <span class="label label-danger">
-                                        21.74
-                                    </span>
-                                </p>
-                                <p>Лингвистическая оценка:
-                                    <span class="label label-danger">
-                                        Малая
-                                    </span>
-                                </p>
-                                <img src="geo_fuzzy_5.png">
-                            </div>
-                            <br />
-                        </div>
-                    </div>
-                </div>
-
-            
-            <br />
-
-            <br />
-            <h3>Исходные данные для пространственного анализа</h3>
-            <div class="block block--scrollable"><table border="1" class="dataframe table table-striped table-bordered table-hover table-condensed">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Big Data Revenue</th>
-      <th>Big Data Revenue as % of Total Revenue</th>
-      <th>% Big Data Hardware Revenue</th>
-      <th>% Big Data Software Revenue</th>
-      <th>% Big Data Services Revenue</th>
-    </tr>
-    <tr>
-      <th>Vendor</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>IBM</th>
-      <td>$1368</td>
-      <td>1%</td>
-      <td>31%</td>
-      <td>27%</td>
-      <td>42%</td>
-    </tr>
-    <tr>
-      <th>HP</th>
-      <td>$869</td>
-      <td>1%</td>
-      <td>42%</td>
-      <td>14%</td>
-      <td>44%</td>
-    </tr>
-    <tr>
-      <th>Dell</th>
-      <td>$652</td>
-      <td>1%</td>
-      <td>85%</td>
-      <td>0%</td>
-      <td>15%</td>
-    </tr>
-    <tr>
-      <th>SAP</th>
-      <td>$545</td>
-      <td>2%</td>
-      <td>0%</td>
-      <td>76%</td>
-      <td>24%</td>
-    </tr>
-    <tr>
-      <th>Teradata</th>
-      <td>$518</td>
-      <td>19%</td>
-      <td>36%</td>
-      <td>30%</td>
-      <td>34%</td>
-    </tr>
-    <tr>
-      <th>Oracle</th>
-      <td>$491</td>
-      <td>1%</td>
-      <td>28%</td>
-      <td>37%</td>
-      <td>36%</td>
-    </tr>
-    <tr>
-      <th>SAS Institute</th>
-      <td>$480</td>
-      <td>16%</td>
-      <td>0%</td>
-      <td>68%</td>
-      <td>32%</td>
-    </tr>
-    <tr>
-      <th>Palantir</th>
-      <td>$418</td>
-      <td>100%</td>
-      <td>0%</td>
-      <td>50%</td>
-      <td>50%</td>
-    </tr>
-    <tr>
-      <th>Accenture</th>
-      <td>$415</td>
-      <td>1%</td>
-      <td>0%</td>
-      <td>0%</td>
-      <td>100%</td>
-    </tr>
-    <tr>
-      <th>PWC</th>
-      <td>$312</td>
-      <td>1%</td>
-      <td>0%</td>
-      <td>0%</td>
-      <td>100%</td>
-    </tr>
-    <tr>
-      <th>Deloitte</th>
-      <td>$305</td>
-      <td>1%</td>
-      <td>0%</td>
-      <td>0%</td>
-      <td>100%</td>
-    </tr>
-    <tr>
-      <th>Pivotal</th>
-      <td>$300</td>
-      <td>100%</td>
-      <td>15%</td>
-      <td>50%</td>
-      <td>35%</td>
-    </tr>
-    <tr>
-      <th>Cisco Systems</th>
-      <td>$295</td>
-      <td>1%</td>
-      <td>72%</td>
-      <td>12%</td>
-      <td>16%</td>
-    </tr>
-    <tr>
-      <th>Splunk</th>
-      <td>$283</td>
-      <td>100%</td>
-      <td>0%</td>
-      <td>71%</td>
-      <td>29%</td>
-    </tr>
-    <tr>
-      <th>Microsoft</th>
-      <td>$280</td>
-      <td>0%</td>
-      <td>0%</td>
-      <td>63%</td>
-      <td>37%</td>
-    </tr>
-    <tr>
-      <th>Amazon</th>
-      <td>$275</td>
-      <td>1%</td>
-      <td>0%</td>
-      <td>0%</td>
-      <td>100%</td>
-    </tr>
-    <tr>
-      <th>Hitachi</th>
-      <td>$260</td>
-      <td>1%</td>
-      <td>0%</td>
-      <td>0%</td>
-      <td>100%</td>
-    </tr>
-    <tr>
-      <th>CSC</th>
-      <td>$188</td>
-      <td>1%</td>
-      <td>0%</td>
-      <td>0%</td>
-      <td>100%</td>
-    </tr>
-    <tr>
-      <th>CenturyLink</th>
-      <td>$175</td>
-      <td>1%</td>
-      <td>0%</td>
-      <td>0%</td>
-      <td>100%</td>
-    </tr>
-    <tr>
-      <th>Google</th>
-      <td>$175</td>
-      <td>1%</td>
-      <td>0%</td>
-      <td>0%</td>
-      <td>100%</td>
-    </tr>
-    <tr>
-      <th>Fusion-io</th>
-      <td>$173</td>
-      <td>43%</td>
-      <td>90%</td>
-      <td>0%</td>
-      <td>10%</td>
-    </tr>
-    <tr>
-      <th>NetApp</th>
-      <td>$167</td>
-      <td>3%</td>
-      <td>73%</td>
-      <td>0%</td>
-      <td>27%</td>
-    </tr>
-    <tr>
-      <th>Intel</th>
-      <td>$165</td>
-      <td>1%</td>
-      <td>66%</td>
-      <td>21%</td>
-      <td>13%</td>
-    </tr>
-    <tr>
-      <th>EMC</th>
-      <td>$165</td>
-      <td>1%</td>
-      <td>74%</td>
-      <td>0%</td>
-      <td>26%</td>
-    </tr>
-    <tr>
-      <th>Mu Sigma</th>
-      <td>$160</td>
-      <td>100%</td>
-      <td>0%</td>
-      <td>0%</td>
-      <td>100%</td>
-    </tr>
-    <tr>
-      <th>TCS</th>
-      <td>$157</td>
-      <td>1%</td>
-      <td>0%</td>
-      <td>0%</td>
-      <td>100%</td>
-    </tr>
-    <tr>
-      <th>Microstrategy</th>
-      <td>$144</td>
-      <td>25%</td>
-      <td>0%</td>
-      <td>68%</td>
-      <td>32%</td>
-    </tr>
-    <tr>
-      <th>Actian</th>
-      <td>$138</td>
-      <td>100%</td>
-      <td>0%</td>
-      <td>73%</td>
-      <td>27%</td>
-    </tr>
-    <tr>
-      <th>Booz Allen Hamilton</th>
-      <td>$125</td>
-      <td>2%</td>
-      <td>0%</td>
-      <td>0%</td>
-      <td>100%</td>
-    </tr>
-    <tr>
-      <th>Opera Solutions</th>
-      <td>$124</td>
-      <td>100%</td>
-      <td>0%</td>
-      <td>0%</td>
-      <td>100%</td>
-    </tr>
-    <tr>
-      <th>Red Hat</th>
-      <td>$109</td>
-      <td>8%</td>
-      <td>0%</td>
-      <td>78%</td>
-      <td>22%</td>
-    </tr>
-    <tr>
-      <th>Capgemini</th>
-      <td>$104</td>
-      <td>1%</td>
-      <td>0%</td>
-      <td>0%</td>
-      <td>100%</td>
-    </tr>
-    <tr>
-      <th>Informatica</th>
-      <td>$98</td>
-      <td>10%</td>
-      <td>0%</td>
-      <td>82%</td>
-      <td>18%</td>
-    </tr>
-    <tr>
-      <th>MarkLogic</th>
-      <td>$96</td>
-      <td>100%</td>
-      <td>0%</td>
-      <td>79%</td>
-      <td>21%</td>
-    </tr>
-    <tr>
-      <th>General Electric</th>
-      <td>$80</td>
-      <td>1%</td>
-      <td>0%</td>
-      <td>75%</td>
-      <td>25%</td>
-    </tr>
-    <tr>
-      <th>VMware</th>
-      <td>$80</td>
-      <td>1%</td>
-      <td>0%</td>
-      <td>79%</td>
-      <td>21%</td>
-    </tr>
-    <tr>
-      <th>Syncsort</th>
-      <td>$75</td>
-      <td>100%</td>
-      <td>0%</td>
-      <td>97%</td>
-      <td>3%</td>
-    </tr>
-    <tr>
-      <th>Cloudera</th>
-      <td>$73</td>
-      <td>100%</td>
-      <td>0%</td>
-      <td>53%</td>
-      <td>47%</td>
-    </tr>
-    <tr>
-      <th>SGI</th>
-      <td>$65</td>
-      <td>10%</td>
-      <td>85%</td>
-      <td>0%</td>
-      <td>15%</td>
-    </tr>
-    <tr>
-      <th>MongoDB</th>
-      <td>$62</td>
-      <td>100%</td>
-      <td>0%</td>
-      <td>56%</td>
-      <td>44%</td>
-    </tr>
-    <tr>
-      <th>Hortonworks</th>
-      <td>$55</td>
-      <td>100%</td>
-      <td>0%</td>
-      <td>73%</td>
-      <td>27%</td>
-    </tr>
-    <tr>
-      <th>DDN</th>
-      <td>$54</td>
-      <td>17%</td>
-      <td>81%</td>
-      <td>0%</td>
-      <td>19%</td>
-    </tr>
-    <tr>
-      <th>Guavus</th>
-      <td>$54</td>
-      <td>100%</td>
-      <td>0%</td>
-      <td>61%</td>
-      <td>39%</td>
-    </tr>
-    <tr>
-      <th>Alteryx</th>
-      <td>$48</td>
-      <td>100%</td>
-      <td>0%</td>
-      <td>90%</td>
-      <td>10%</td>
-    </tr>
-    <tr>
-      <th>1010data</th>
-      <td>$45</td>
-      <td>100%</td>
-      <td>0%</td>
-      <td>0%</td>
-      <td>100%</td>
-    </tr>
-    <tr>
-      <th>Rackspace</th>
-      <td>$42</td>
-      <td>3%</td>
-      <td>0%</td>
-      <td>0%</td>
-      <td>100%</td>
-    </tr>
-    <tr>
-      <th>TIBCO</th>
-      <td>$36</td>
-      <td>3%</td>
-      <td>0%</td>
-      <td>64%</td>
-      <td>36%</td>
-    </tr>
-    <tr>
-      <th>MapR</th>
-      <td>$35</td>
-      <td>100%</td>
-      <td>0%</td>
-      <td>77%</td>
-      <td>23%</td>
-    </tr>
-    <tr>
-      <th>Tableau Software</th>
-      <td>$33</td>
-      <td>16%</td>
-      <td>0%</td>
-      <td>76%</td>
-      <td>24%</td>
-    </tr>
-    <tr>
-      <th>Qlik</th>
-      <td>$30</td>
-      <td>6%</td>
-      <td>0%</td>
-      <td>73%</td>
-      <td>27%</td>
-    </tr>
-    <tr>
-      <th>Attivio</th>
-      <td>$29</td>
-      <td>100%</td>
-      <td>0%</td>
-      <td>62%</td>
-      <td>38%</td>
-    </tr>
-    <tr>
-      <th>Juniper</th>
-      <td>$28</td>
-      <td>1%</td>
-      <td>82%</td>
-      <td>0%</td>
-      <td>18%</td>
-    </tr>
-    <tr>
-      <th>DataStax</th>
-      <td>$26</td>
-      <td>100%</td>
-      <td>0%</td>
-      <td>85%</td>
-      <td>15%</td>
-    </tr>
-    <tr>
-      <th>GoodData</th>
-      <td>$26</td>
-      <td>33%</td>
-      <td>0%</td>
-      <td>0%</td>
-      <td>100%</td>
-    </tr>
-    <tr>
-      <th>Attunity</th>
-      <td>$23</td>
-      <td>77%</td>
-      <td>0%</td>
-      <td>74%</td>
-      <td>26%</td>
-    </tr>
-    <tr>
-      <th>Fractal Analytics</th>
-      <td>$19</td>
-      <td>70%</td>
-      <td>0%</td>
-      <td>0%</td>
-      <td>100%</td>
-    </tr>
-    <tr>
-      <th>Pentaho</th>
-      <td>$18</td>
-      <td>45%</td>
-      <td>0%</td>
-      <td>76%</td>
-      <td>24%</td>
-    </tr>
-    <tr>
-      <th>Datameer</th>
-      <td>$17</td>
-      <td>100%</td>
-      <td>0%</td>
-      <td>82%</td>
-      <td>18%</td>
-    </tr>
-    <tr>
-      <th>Couchbase</th>
-      <td>$17</td>
-      <td>100%</td>
-      <td>0%</td>
-      <td>71%</td>
-      <td>29%</td>
-    </tr>
-    <tr>
-      <th>Basho</th>
-      <td>$16</td>
-      <td>100%</td>
-      <td>0%</td>
-      <td>76%</td>
-      <td>24%</td>
-    </tr>
-    <tr>
-      <th>Kognitio</th>
-      <td>$15</td>
-      <td>100%</td>
-      <td>0%</td>
-      <td>47%</td>
-      <td>53%</td>
-    </tr>
-    <tr>
-      <th>Sumo Logic</th>
-      <td>$14</td>
-      <td>100%</td>
-      <td>0%</td>
-      <td>0%</td>
-      <td>100%</td>
-    </tr>
-    <tr>
-      <th>Jaspersoft</th>
-      <td>$14</td>
-      <td>41%</td>
-      <td>0%</td>
-      <td>64%</td>
-      <td>36%</td>
-    </tr>
-    <tr>
-      <th>SiSense</th>
-      <td>$14</td>
-      <td>100%</td>
-      <td>0%</td>
-      <td>79%</td>
-      <td>21%</td>
-    </tr>
-    <tr>
-      <th>Talend</th>
-      <td>$14</td>
-      <td>25%</td>
-      <td>71%</td>
-      <td>0%</td>
-      <td>29%</td>
-    </tr>
-    <tr>
-      <th>Actuate</th>
-      <td>$13</td>
-      <td>9%</td>
-      <td>0%</td>
-      <td>69%</td>
-      <td>31%</td>
-    </tr>
-    <tr>
-      <th>Revolution Analytics</th>
-      <td>$12</td>
-      <td>100%</td>
-      <td>0%</td>
-      <td>67%</td>
-      <td>33%</td>
-    </tr>
-    <tr>
-      <th>Aerospike</th>
-      <td>$12</td>
-      <td>100%</td>
-      <td>0%</td>
-      <td>92%</td>
-      <td>8%</td>
-    </tr>
-    <tr>
-      <th>Neo Technologies</th>
-      <td>$12</td>
-      <td>100%</td>
-      <td>0%</td>
-      <td>67%</td>
-      <td>33%</td>
-    </tr>
-    <tr>
-      <th>Digital Reasoning</th>
-      <td>$11</td>
-      <td>100%</td>
-      <td>0%</td>
-      <td>64%</td>
-      <td>36%</td>
-    </tr>
-    <tr>
-      <th>Tresata</th>
-      <td>$10</td>
-      <td>100%</td>
-      <td>0%</td>
-      <td>90%</td>
-      <td>10%</td>
-    </tr>
-    <tr>
-      <th>Rainstor</th>
-      <td>$10</td>
-      <td>100%</td>
-      <td>0%</td>
-      <td>70%</td>
-      <td>30%</td>
-    </tr>
-    <tr>
-      <th>Think Big Analytics</th>
-      <td>$10</td>
-      <td>100%</td>
-      <td>0%</td>
-      <td>0%</td>
-      <td>100%</td>
-    </tr>
-    <tr>
-      <th>ODM</th>
-      <td>$3800</td>
-      <td>NaN</td>
-      <td>100%</td>
-      <td>0%</td>
-      <td>0%</td>
-    </tr>
-    <tr>
-      <th>Other</th>
-      <td>$3030</td>
-      <td>NaN</td>
-      <td>27%</td>
-      <td>20%</td>
-      <td>53%</td>
-    </tr>
-    <tr>
-      <th>Total</th>
-      <td>$18607</td>
-      <td>NaN</td>
-      <td>38%</td>
-      <td>22%</td>
-      <td>40%</td>
-    </tr>
-  </tbody>
-</table></div>
-        </div>
         <script src="res/js/jquery.min.js"></script>
         <script src="res/js/bootstrap.min.js"></script>
-        <script src="res/js/report.js"></script>
 
     </body>
 </html>
