@@ -153,6 +153,23 @@
             <br />
             <h3>Исходные данные для темпорального анализа</h3>
             <div class="block block--scrollable">{{ raw_data_table }}</div>
+
+            <br />
+            <h3>Классификация на данных UC Irvine Machine Learning Repository</h3>
+            <p>
+                <strong>Результат кроссвалидации</strong>
+                <span class="label label-success">
+                    {{ crossvalidation_result }}%
+                </span>
+            </p>
+            <p>
+                <strong>Результат классификации</strong>
+                <span class="label label-success">
+                    {{ classification_result }}%
+                </span>
+            </p>
+            <p><strong>Данные в виде таблицы (исходные данные + предсказанный класс)</strong></p>
+            <div class="block block--scrollable">{{ classification_table }}</div>
         </div>
 
         <div id="geo" class="tabcontent">

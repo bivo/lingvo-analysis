@@ -1,6 +1,6 @@
 body {width: 70%; margin: 0 15%; font-size: 1.6em; padding-bottom: 70px;}
 .block {padding-left: 25px;}
-.block--scrollable {max-height: 600px; overflow-y: scroll; overflow-x: hidden;}
+.block--scrollable {max-height: 600px; overflow-y: scroll; overflow-x: scroll;}
 /* Style the list */
 ul.tab {
     list-style-type: none;
