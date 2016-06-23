@@ -15,13 +15,13 @@ time_series_clusters = None
 css_classes = ["table", "table-striped", "table-bordered", "table-hover", "table-condensed"]
 
 
-def entry_point(clusters, geo_clusters, classes, non_classified, scores):
+def entry_point(clusters, geo_clusters, classes, non_classified, scores, cross_val, series, class_result):
     read_files('clustered_data.csv', 'revenue.csv')
-    result = start_analysis(clusters, geo_clusters, classes, non_classified, scores)
+    result = start_analysis(clusters, geo_clusters, classes, non_classified, scores, cross_val, series, class_result)
     render_result(**result.__dict__)
 
 
-def start_analysis(clusters, geo_clusters, classes, non_classified, scores):
+def start_analysis(clusters, geo_clusters, classes, non_classified, scores, cross_val, series, class_result):
     all_clusters_list = clusters.values.flatten().tolist()
     all_clusters_set = set(all_clusters_list)
 
@@ -29,6 +29,9 @@ def start_analysis(clusters, geo_clusters, classes, non_classified, scores):
     geo_clusters_set = set(geo_clusters_list)
 
     report = Report()
+    report.crossvalidation_result = cross_val
+    report.classification_table = series.to_html(classes=css_classes)
+    report.classification_result = class_result
     report.raw_data_table = data_frame.to_html(classes=css_classes)
     report.cluster_table = clusters.to_html(classes=css_classes, header=False)
     report.cluster_scores = scores.to_html(classes=css_classes, header=False)
@@ -88,10 +91,10 @@ def start_analysis(clusters, geo_clusters, classes, non_classified, scores):
         tend_stats = Counter(tendencies)
         cluster.tendency_most = tend_stats.most_common(1)[0][0]
         cluster.tendency_most_count = tend_stats.most_common(1)[0][1]
-        if (len(tend_stats.most_common()) > 1):
+        if len(tend_stats.most_common()) > 1:
             cluster.least_tendency = True
-            cluster.tendency_least = tend_stats.most_common()[:-1-1:-1][0][0]
-            cluster.tendency_least_count = tend_stats.most_common()[:-1-1:-1][0][1]
+            cluster.tendency_least = tend_stats.most_common()[:-1 - 1:-1][0][0]
+            cluster.tendency_least_count = tend_stats.most_common()[:-1 - 1:-1][0][1]
 
         cluster.lingvo_result = fuzzy_lingvo_scale(cluster_elements[cluster_id], cluster_id)
 
@@ -118,6 +121,7 @@ def start_analysis(clusters, geo_clusters, classes, non_classified, scores):
 
     return report
 
+
 def get_tendency(series):
     if abs(series[0] - series[-1]) > 10:
         if series[0] > series[-1]:
@@ -126,6 +130,7 @@ def get_tendency(series):
             return 'Рост'
     else:
         return 'Стабильность'
+
 
 def count_clusters_statistics(all_clusters_list):
     stat = Counter(all_clusters_list).most_common(None)
@@ -393,7 +398,7 @@ def get_dominating_type(types):
 
     result_keys = [best_key]
     for tpl in types.items():
-        if tpl[0] != best_key and tpl[1]/best_val > 0.75:
+        if tpl[0] != best_key and tpl[1] / best_val > 0.75:
             result_keys.append(tpl[0])
 
     if len(result_keys) == 3:

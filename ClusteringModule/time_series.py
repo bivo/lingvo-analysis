@@ -42,9 +42,9 @@ def clusterize(models):
     homo = metrics.homogeneity_score(labels_true, clusters)
     completeness = metrics.completeness_score(labels_true, clusters)
 
-    scores_list = [rand, mi,homo,completeness]
+    scores_list = [rand, mi, homo, completeness]
     scores_names = ['Приведенный индекс Ранда', 'Коэф. взаимной информации', 'Гомогенность', 'Полнота кластеров']
-    scores =  pd.DataFrame(data=scores_list, index=scores_names, dtype=object)
+    scores = pd.DataFrame(data=scores_list, index=scores_names, dtype=object)
     return clusters, scores
 
 
