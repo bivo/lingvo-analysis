@@ -15,7 +15,7 @@ time_series_clusters = None
 css_classes = ["table", "table-striped", "table-bordered", "table-hover", "table-condensed"]
 
 
-def entry_point(clusters, geo_clusters, classes, non_classified):
+def entry_point(clusters, geo_clusters, classes, non_classified, scores):
     read_files('clustered_data.csv', 'revenue.csv')
     result = start_analysis(clusters, geo_clusters, classes, non_classified, scores)
     render_result(**result.__dict__)
